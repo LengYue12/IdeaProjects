@@ -1,0 +1,35 @@
+server:
+  port: 9400
+#注册到Eureka服务中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://LagouCloudEurekaServerA:9300/eureka,http://LagouCloudEurekaServerB:9301/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:@project.version@
+spring:
+  application:
+    name: lagou-cloud-config
+  cloud:
+    config:
+      server:
+        #git配置：uri、用户名、密码、分支....
+        git:
+          uri: https://github.com/LengYue12/lagou-config.git  #配置git地址
+          username: LengYue12
+          password: zs.2020jiayou
+          search-paths:
+            - lagou-config
+      label: master
+  rabbitmq:
+    host: 192.168.200.141
+    port: 5672
+    username: lengyue
+    password: 123456
+# 暴露端口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

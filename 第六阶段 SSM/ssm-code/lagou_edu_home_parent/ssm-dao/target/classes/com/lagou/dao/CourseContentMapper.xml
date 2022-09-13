@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lagou.dao.CourseContentMapper">
+
+    <!-- 一对多配置,一个章节下有多个课时 -->
+<!--    手动映射封装-->
+    <resultMap id="SectionAndLessonResultMap" type="courseSection">
+        <id property="id" column="id"/>
+        <result property="courseId" column="course_id"/>
+        <result property="sectionName" column="section_name"/>
+        <result property="description" column="description"/>
+        <result property="orderNum" column="order_num"/>
+        <result property="status" column="status"/>
+
+        <!-- 使用 collection,配置一对多关系 -->
+<!--        封装课时信息-->
+        <collection property="lessonList" ofType="CourseLesson">
+            <id property="id" column="lessonId"/>
+            <result property="courseId" column="course_id"/>
+            <result property="sectionId" column="section_id"/>
+            <result property="theme" column="theme"/>
+            <result property="duration" column="duration"/>
+            <result property="isFree" column="is_free"/>
+            <result property="orderNum" column="lessonOrderNum"/>
+            <result property="status" column="lessonStatus"/>
+        </collection>
+    </resultMap>
+
+    <!-- 课时表字段信息  -->
+    <sql id="lesson_column_list">
+      cl.id lessonId,
+      cl.course_id,
+      cl.section_id,
+      cl.theme,
+      cl.duration,
+      cl.is_free,
+      cl.order_num lessonOrderNum,
+      cl.status lessonStatus
+    </sql>
+
+
+
+<!--    根据课程ID查询课程内容(章节-课时)-->
+<select id="findSectionAndLessonByCourseId" parameterType="int" resultMap="SectionAndLessonResultMap">
+    SELECT
+  cs.*,
+  <include refid="lesson_column_list"></include>
+FROM
+  course_section cs
+  LEFT JOIN course_lesson cl
+    ON cl.section_id = cs.id
+WHERE cs.course_id = #{id}
+ORDER BY cs.order_num
+</select>
+
+
+<!--    回显课程信息-->
+<select id="findCourseByCourseId" resultType="course" parameterType="int">
+    select id,course_name from course where id = #{courseId}
+</select>
+
+
+<!--    保存章节-->
+<insert id="saveSection" parameterType="courseSection">
+    insert into course_section(
+        course_id,
+        section_name,
+        description,
+        order_num,
+        STATUS,
+        create_time,
+        update_time
+    )values(#{courseId},#{sectionName},#{description},#{orderNum},#{status},#{createTime},#{updateTime})
+</insert>
+
+
+    <!--更新章节 void updateSection(CourseSection courseSection);-->
+    <update id="updateSection" parameterType="courseSection">
+        UPDATE course_section
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="sectionName != null and sectionName != ''">
+                section_name = #{sectionName},
+            </if>
+
+            <if test="description != null and description != ''">
+                description = #{description},
+            </if>
+
+            <if test="orderNum != null and orderNum != '' or orderNum == 0">
+                order_num = #{orderNum},
+            </if>
+
+            <if test="updateTime != null">
+                update_time=#{updateTime},
+            </if>
+        </trim>
+        <where>
+            <if test="id != null and id != '' ">id = #{id}</if>
+        </where>
+    </update>
+
+
+<!--    修改章节状态 void updateSectionStatus(CourseSection courseSection);
+            根据id修改指定记录的status的值
+-->
+    <update id="updateSectionStatus" parameterType="courseSection">
+        update course_section set status = #{status},update_time = #{updateTime} where id = #{id}
+    </update>
+
+
+<!--    新增课时信息 void saveLesson(CourseLesson courseLesson);-->
+    <insert id="saveLesson" parameterType="courseLesson">
+        insert into course_lesson(
+            course_id,
+            section_id,
+            theme,
+            duration,
+            is_free,
+            order_num,
+            create_time,
+            update_time
+        ) values (#{courseId},#{sectionId},#{theme},#{duration},#{isFree},#{orderNum},#{createTime},#{updateTime})
+    </insert>
+
+
+<!--    更新课时信息  void updateLesson(CourseLesson courseLesson);-->
+    <update id="updateLesson" parameterType="courseLesson">
+        UPDATE course_lesson
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="theme != null and theme != ''">
+                theme = #{theme},
+            </if>
+
+            <if test="duration != null and duration != ''">
+                duration = #{duration},
+            </if>
+
+            <if test="isFree != null and isFree != ''">
+                is_free = #{isFree},
+            </if>
+
+            <if test="orderNum != null and orderNum != '' or orderNum == 0">
+                order_num = #{orderNum},
+            </if>
+
+            <if test="updateTime != null">
+                update_time=#{updateTime},
+            </if>
+        </trim>
+        <where>
+            <if test="id != null and id != '' ">id = #{id}</if>
+        </where>
+    </update>
+
+
+    <!--    修改课时状态 void updateLessonStatus(CourseLesson courseLesson);
+            根据id修改指定记录的status的值
+-->
+    <update id="updateLessonStatus" parameterType="courseLesson">
+        update course_lesson set status = #{status},update_time = #{updateTime} where id = #{id}
+    </update>
+</mapper>

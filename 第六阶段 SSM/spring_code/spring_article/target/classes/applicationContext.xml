@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+       	http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+       	http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop.xsd
+">
+
+
+<!--    开启注解扫描
+            因为当前在ArticleDaoImpl和ArticleServiceImpl 上都添加了对应的IOC注解
+-->
+<context:component-scan base-package="com.lagou"/>
+
+<!--    引入properties文件-->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+
+
+<!--    配置dataSource数据源对象-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+
+<!--    配置JdbcTemplate-->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+<!--        通过有参构造注入DataSource数据源对象-->
+        <constructor-arg name="dataSource" ref="dataSource"/>
+    </bean>
+
+
+
+<!--    需要采用声明式事务管理进行事务控制（XML方式）-->
+<!--    借助Spring的声明式事务完成对ArticleServiceImpl 类里面的方法进行事务控制增强，实现事务代码和业务代码的解耦合 -->
+
+    <!--    声明当前配置事务管理器对象-->
+    <!--这个事务管理器在进行事务控制时，主要要借助Connection来完成事务控制
+        所以在创建该对象时，要注入数据源对象
+    -->
+
+<!--    因为持久层采用JDBCTemplate，所以实现类为 DataSourceTransactionManager -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+<!--        通过set方式注入数据源对象-->
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+
+<!--    配置通知增强，事务通知的配置，在通知中指定了事务的相关属性-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+<!--        定义事务的属性-->
+        <tx:attributes>
+<!--            当前在切点表达式中所能匹配到的方法，以save开头的，事务传播行为就是REQUIRED。其他属性都走默认值-->
+            <tx:method name="save*" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+
+
+<!--    完成事务aop织入的配置，配置切面-->
+    <aop:config>
+<!--    抽取切点表达式-->
+        <aop:pointcut id="myPointcut" expression="execution(* com.lagou.service.impl.ArticleServiceImpl.*(..))"/>
+
+<!--        采用声明式事务管理进行事务控制，对ArticleServiceImpl 中的任意方法进行事务控制-->
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="myPointcut"/>
+
+<!--        采用AOP对添加方法进行前置增强，增强逻辑为控制台打印前置增强
+                切面配置，引用通知类，包含增强业务逻辑的类
+    -->
+        <aop:aspect ref="myAdvice">
+<!--            通知类里面的before通知方法为 ArticleServiceImpl中的方法 进行前置增强-->
+            <aop:before method="before" pointcut-ref="myPointcut"/>
+        </aop:aspect>
+    </aop:config>
+
+</beans>

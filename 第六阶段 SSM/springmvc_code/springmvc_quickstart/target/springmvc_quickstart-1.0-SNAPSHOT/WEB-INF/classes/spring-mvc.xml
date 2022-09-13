@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/mvc
+		http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd
+">
+
+
+
+    <!--    IOC注解扫描
+                    只扫描controller包下的类，只负责web层，把web层的实例对象存到由springmvc创建出来的IOC容器中
+        -->
+<!--  由springmvc创建出的容器，管理web层对象  -->
+    <context:component-scan base-package="com.lagou.controller"/>
+
+
+<!--    显式配置处理器映射器-处理器适配器-->
+<!--    添加这个标签，等同于配置了处理器映射器和处理器适配器，还进行了功能增强：支持json的读写   直接就可以完成json串和对象的转换
+            conversion-service="conversionService"：使自定义类型转换器生效
+-->
+    <mvc:annotation-driven/>
+
+<!--    配置视图解析器：ViewResolver        可以帮助我们完成前缀和后缀的配置，在编写返回值时，省去了前缀和后缀，提高开发效率
+            InternalResourceViewResolver：具体视图解析器的组件类
+-->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<!--        success：解析逻辑视图名，解析成具体的物理文件地址
+                就是进行前缀和后缀的拼接
+                    /WEB-INF/pages/success.jsp
+                        通过这个地址可以定位到页面
+-->
+
+
+<!--        属性注入-->
+<!--     配置视图解析器   前缀-->
+        <property name="prefix" value="/WEB-INF/pages/"/>
+<!--        后缀-->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+
+
+<!--  自定义类型转换器的配置
+
+            当前台请求参数为日期类型的字符串，就会走到这个自定义类型转换器，把日期类型字符串转换成日期对象进行返回
+-->
+    <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+
+        <property name="converters">
+            <set>
+                <bean class="com.lagou.converter.DateConverter"></bean>
+            </set>
+        </property>
+    </bean>
+
+
+
+<!--采用方式一完成了指定静态资源的放行-->
+<!--    方式一：放行指定的静态资源       局部化
+            mapping="/js/**"：放行的映射路径        表示以js开头的请求路径，后面不管层级，都进行放行
+            location="/js/"：静态资源所在的目录       当前的jquery-3.5.1.js  就在js目录下，所以就写 /js/
+-->
+<!--<mvc:resources mapping="/js/**" location="/js/"/>-->
+<!--<mvc:resources mapping="/css/**" location="/css/"/>-->
+<!--<mvc:resources mapping="/img/**" location="/img/"/>-->
+
+
+
+<!--    方式二：放行全部的静态资源       全部的
+            在springmvc配置文件中开启了DefaultServlet处理静态资源
+             也就是说现在对于静态资源的处理最终都要由tomcat内置的DefaultServlet来把静态资源进行处理
+-->
+<mvc:default-servlet-handler/>
+
+
+
+
+
+
+<!--  配置文件上传解析器
+        可以完成一些属性值的设置，进行一些参数设定
+-->
+<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+<!--  maxUploadSize：设置文件上传的最大值
+        设定文件上传的最大值为5MB，5*1024*1024
+ -->
+    <property name="maxUploadSize" value="5242880"></property>
+<!--   maxInMemorySize：设置文件上传时写入内存的最大值，如果小于这个参数值不会生成临时文件，默认为10240 -->
+    <property name="maxInMemorySize" value="40960"></property>
+</bean>
+
+
+
+
+
+<!--    配置自定义的异常处理器-->
+<bean id="globalExceptionResolve" class="com.lagou.exception.GlobalExceptionResolve"></bean>
+
+
+
+
+<!--    配置拦截器-->
+<!--    拦截器链，进行拦截器的配置注册
+            配置注册的顺序就是执行顺序
+                在目标方法执行之前，其实是要经过MyInterceptor1 和 MyInterceptor2 这两个拦截器的
+-->
+<mvc:interceptors>
+    <mvc:interceptor>
+<!--   借助mvc:mapping，配置一下对应的该interceptor 所拦截的路径
+            path=/**        表示对访问路径一级以及多级目录都进行拦截
+   -->
+        <mvc:mapping path="/**"/>   <!--对所有controller类里面的所有方法都进行拦截-->
+<!--        当前就会采用MyInterceptor1 这个拦截器 对所有的请求资源路径 都进行拦截-->
+        <bean class="com.lagou.interceptor.MyInterceptor1"></bean>
+    </mvc:interceptor>
+    
+    <mvc:interceptor>
+        <mvc:mapping path="/**"/>
+        <bean class="com.lagou.interceptor.MyInterceptor2"></bean>
+    </mvc:interceptor>
+</mvc:interceptors>
+
+</beans>

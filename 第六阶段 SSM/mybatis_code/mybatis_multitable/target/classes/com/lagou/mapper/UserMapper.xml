@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lagou.mapper.UserMapper">
+
+<!-- 表示当前映射开启二级缓存 -->
+    <cache/>
+
+
+
+<!--    一对多关联查询:查询所有的用户，同时还要查询出每个用户所关联的订单信息-->
+
+<!--    手动编写映射关系      resultMap标签
+            sql语句查询出的结果，要把普通字段封装到user实体中的属性上
+            把关于orders的一些信息是要封装到user对象里面的list集合里面的每个order上
+            所以要配置字段和属性的映射关系-->
+<resultMap id="userMap" type="user">
+    <id property="id" column="id"/>
+    <result property="username" column="username"/>
+    <result property="birthday" column="birthday"/>
+    <result property="sex" column="sex"/>
+    <result property="address" column="address"/>
+
+<!--
+    collection标签：一对多使用collection标签进行关联
+        property:一对多的实体中的list集合属性名
+        ofType：list集合的泛型
+
+        配置user实体中的Order信息
+-->
+    <collection property="ordersList" ofType="orders">
+        <id property="id" column="oid"/>
+        <result property="ordertime" column="ordertime"/>
+        <result property="total" column="total"/>
+        <result property="uid" column="uid"/>
+    </collection>
+</resultMap>
+<!--    给orders表的id起别名-->
+    <select id="findAllWithOrder" resultMap="userMap">
+        SELECT u.*,o.id oid, o.`ordertime`,o.`total`,o.`uid` FROM orders o RIGHT JOIN USER u ON o.`uid` = u.`id`
+    </select>
+
+
+
+
+
+
+
+
+<!--    多对多关联查询:查询所有的用户，同时还要查询出每个用户所关联的角色信息-->
+    
+<!--    配置resultMap-->
+    <resultMap id="userRoleMap" type="user">
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="birthday" column="birthday"/>
+        <result property="sex" column="sex"/>
+        <result property="address" column="address"/>
+
+<!--        collection标签：要放user实体里面的角色列表信息
+                property="roleList":表示要封装user实体里面的roleList属性
+                ofType="Role"：写的就是user实体里的roleList 这个集合的泛型-->
+        <collection property="roleList" ofType="Role">
+            <id property="id" column="rid"/>
+            <result property="rolename" column="rolename"/>
+            <result property="roleDesc" column="roleDesc"/>
+        </collection>
+
+    </resultMap>
+
+<!--    select标签：中的 resultMap="userRoleMap"
+            表明SQL语句查询出的结果就按照id为 userRoleMap 的resultMap 手动配置进行封装-->
+<select id="findAllWithRole" resultMap="userRoleMap">
+        SELECT u.*,r.id rid,r.rolename,r.roleDesc FROM USER u LEFT JOIN sys_user_role ur ON ur.userid = u.`id`
+		     LEFT JOIN sys_role r ON ur.roleid = r.id
+</select>
+
+
+
+
+
+<!--    第二条要去执行的sql语句，column的uid的值就作为参数进行了传递，放到#{}里面作为实际参数
+        查询出结果后，就会封装成一个user对象，最终把user对象放到Orders实体中的user属性上
+
+        根据id查询用户
+            只需要根据传过来的id值去查询到具体的用户信息，并不是一个关联查询，所以用resultType
+            当传递过来的参数是基本数据类型或者String时，且个数只有一个的情况下。那么不写parameterType也ok
+            -->
+
+<!--    flushCache="true"：表示每次查询时，都会清除一级缓存-->
+
+
+<!--使用 useCache="true"  开启二级缓存的Statement 配置-->
+<!--    useCache="true":代表当前这个Statement要使用二级缓存
+        useCache="false":表示 每一次调用findById这个方法的时候，都去查询数据库，不去查询缓存
+-->
+    <select id="findById" resultType="user" parameterType="int" useCache="true">
+        SELECT * FROM user WHERE id = #{id}
+    </select>
+
+
+
+
+
+<!--   一对多嵌套查询：查询所有的用户，同时还要查询出每个用户所关联的订单信息
+
+        一对多配置：
+            使用<resultMap>和<collection>标签做配置，通过column条件来执行select查询
+                select 属性是定位到哪条要执行的sql的
+
+ -->
+
+    <resultMap id="userOrderMap" type="user">
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="birthday" column="birthday"/>
+        <result property="sex" column="sex"/>
+        <result property="address" column="address"/>
+
+<!--    如何去封装user实体里面的ordersList
+        也就是第一条sql执行完毕后，要配置id查询出每个用户所对应的订单信息并封装到user实体里面的ordersList 集合中-->
+
+<!--        所以要用的collection 标签，property 对应属性名
+            ofType：集合中泛型的全路径
+            column：表示要传递的参数，是当前sql查询出来的哪个字段值
+            select：表示要去调用的sql，定位到哪条sql语句进行执行。   值写Statementid     namespace.id
+            namespace:接口全路径     id值：和mapper接口的方法名相同-->
+
+<!--        开启一对多，延迟加载-->
+
+<!--        fetchType="lazy": 就是延迟加载策略
+            fetchType="eager": 立即加载策略
+    -->
+        <collection property="ordersList" ofType="orders" column="id"
+                    select="com.lagou.mapper.OrderMapper.findByUid"
+        />
+
+    </resultMap>
+    
+<!--    先把用户表的信息查询出来-->
+    <select id="findAllWithOrder2" resultMap="userOrderMap">
+        SELECT * FROM USER
+    </select>
+
+
+
+
+
+
+<resultMap id="userRoleMap2" type="user">
+    <id property="id" column="id"/>
+    <result property="username" column="username"/>
+    <result property="birthday" column="birthday"/>
+    <result property="sex" column="sex"/>
+    <result property="address" column="address"/>
+
+<!--    是要把查询出来的id值作为参数传递。
+        所以使用 column="id"-->
+
+<!--   select:表示要定位到哪条sql去执行
+        值为Statementid：
+            Statementid就是由namespace的值.id的值-->
+    <collection property="roleList" ofType="role" column="id" select="com.lagou.mapper.RoleMapper.findByUid"/>
+</resultMap>
+
+<!-- 多对多嵌套查询：查询所有的用户，同时还要查询出每个用户所关联的角色信息
+
+        多对多配置：
+            使用<resultMap>和<collection>标签做配置，通过column条件，执行select查询
+                select 属性 是用来定位到要执行的哪条sql的属性
+
+ -->
+    <select id="findAllWithRole2" resultMap="userRoleMap2">
+        SELECT * FROM USER
+    </select>
+
+</mapper>

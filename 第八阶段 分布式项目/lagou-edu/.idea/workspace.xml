@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="62b1869e-522c-456d-aebf-3d21b43c82fc" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL 128" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL 128" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL 128" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="edu: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\software\repository" />
+        <option name="mavenHome" value="D:/software/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\software\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="2CvssAZdLWvyT5fMOcAf5wMpj3F" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ssm-code/lagou_edu_home_parent" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15136719" />
+    <property name="project.structure.side.proportion" value="0.25609756" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\idea\lagou-edu-parent\lagou-edu-dao\src\main\resources\mapper" />
+      <recent name="D:\workspace\idea\lagou-edu-parent\lagou-edu-dao\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lagou.entity" />
+      <recent name="mapper" />
+      <recent name="user" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\idea\lagou-edu-parent\lagou-edu-dao\src\main\resources\mapper" />
+      <recent name="D:\workspace\idea\lagou-edu-parent\lagou-edu-entity\src\main\java\com\lagou\entity" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestCourse.getComment">
+    <configuration name="TestComment.getCommentsByCourseId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lagou-edu-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="comment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="comment" />
+      <option name="MAIN_CLASS_NAME" value="comment.TestComment" />
+      <option name="METHOD_NAME" value="getCommentsByCourseId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCourse.getComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lagou-edu-dao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="course.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="course" />
+      <option name="MAIN_CLASS_NAME" value="course.TestCourse" />
+      <option name="METHOD_NAME" value="getComment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lagou-edu-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="user" />
+      <option name="MAIN_CLASS_NAME" value="user.TestUser" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUser.updatePassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lagou-edu-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="user" />
+      <option name="MAIN_CLASS_NAME" value="user.TestUser" />
+      <option name="METHOD_NAME" value="updatePassword" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUser.updateUserInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lagou-edu-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="user" />
+      <option name="MAIN_CLASS_NAME" value="user.TestUser" />
+      <option name="METHOD_NAME" value="updateUserInfo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestCourse.getComment" />
+        <item itemvalue="JUnit.TestUser.updateUserInfo" />
+        <item itemvalue="JUnit.TestUser.updatePassword" />
+        <item itemvalue="JUnit.TestUser" />
+        <item itemvalue="JUnit.TestComment.getCommentsByCourseId" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.09283626" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:MySQL 128" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:MySQL 128" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@674ab268" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:MySQL 128" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@188c002e" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:MySQL 128" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@745cb26" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:MySQL 128" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@3adfed54" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62b1869e-522c-456d-aebf-3d21b43c82fc" name="默认更改列表" comment="" />
+      <created>1659694597041</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659694597041</updated>
+      <workItem from="1659694599445" duration="11857000" />
+      <workItem from="1659762545929" duration="2203000" />
+      <workItem from="1659764836932" duration="43000" />
+      <workItem from="1659764896049" duration="131000" />
+      <workItem from="1659769254264" duration="16519000" />
+      <workItem from="1659789501087" duration="21000" />
+      <workItem from="1659789536214" duration="1903000" />
+      <workItem from="1659791475431" duration="210000" />
+      <workItem from="1659791725787" duration="94000" />
+      <workItem from="1659792074532" duration="3876000" />
+      <workItem from="1659797906847" duration="2212000" />
+      <workItem from="1659847781452" duration="20651000" />
+      <workItem from="1659882270562" duration="32000" />
+      <workItem from="1659947457331" duration="6592000" />
+      <workItem from="1660024376794" duration="2200000" />
+      <workItem from="1660041238457" duration="7749000" />
+      <workItem from="1660099469931" duration="7827000" />
+      <workItem from="1660185853619" duration="1680000" />
+      <workItem from="1660187921934" duration="17491000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="313" y="139" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1659789586672">
+      <screen x="0" y="0" width="1440" height="960" />
+    </state>
+    <state x="313" y="139" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.960@0.0.1440.960" timestamp="1659789586672" />
+    <state x="526" y="181" key="#com.intellij.ide.util.MemberChooser" timestamp="1659875991210">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="526" y="181" key="#com.intellij.ide.util.MemberChooser/0.0.1440.912@0.0.1440.912" timestamp="1659875991210" />
+    <state x="526" y="190" key="#com.intellij.ide.util.MemberChooser/0.0.1440.960@0.0.1440.960" timestamp="1659796368719" />
+    <state x="431" y="387" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1659702721114">
+      <screen x="0" y="0" width="1440" height="960" />
+    </state>
+    <state x="431" y="387" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1440.960@0.0.1440.960" timestamp="1659702721114" />
+    <state x="510" y="387" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1659702727283">
+      <screen x="0" y="0" width="1440" height="960" />
+    </state>
+    <state x="510" y="387" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1440.960@0.0.1440.960" timestamp="1659702727283" />
+    <state x="341" y="406" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1659795486470">
+      <screen x="0" y="0" width="1440" height="960" />
+    </state>
+    <state x="341" y="406" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.960@0.0.1440.960" timestamp="1659795486470" />
+    <state x="313" y="139" key="#项目结构" timestamp="1659795293151">
+      <screen x="0" y="0" width="1440" height="960" />
+    </state>
+    <state x="313" y="139" key="#项目结构/0.0.1440.960@0.0.1440.960" timestamp="1659795293151" />
+    <state x="501" y="224" key="FileChooserDialogImpl" timestamp="1659874568741">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="501" y="224" key="FileChooserDialogImpl/0.0.1440.912@0.0.1440.912" timestamp="1659874568741" />
+    <state x="501" y="236" key="FileChooserDialogImpl/0.0.1440.960@0.0.1440.960" timestamp="1659702726118" />
+    <state width="1397" height="310" key="GridCell.Tab.0.bottom" timestamp="1660235081330">
+      <screen x="0" y="0" width="1440" height="960" />
+    </state>
+    <state width="1397" height="391" key="GridCell.Tab.0.bottom/0.0.1440.912@0.0.1440.912" timestamp="1660222991214" />
+    <state width="1397" height="310" key="GridCell.Tab.0.bottom/0.0.1440.960@0.0.1440.960" timestamp="1660235081330" />
+    <state width="1397" height="310" key="GridCell.Tab.0.center" timestamp="1660235081330">
+      <screen x="0" y="0" width="1440" height="960" />
+    </state>
+    <state width="1397" height="391" key="GridCell.Tab.0.center/0.0.1440.912@0.0.1440.912" timestamp="1660222991214" />
+    <state width="1397" height="310" key="GridCell.Tab.0.center/0.0.1440.960@0.0.1440.960" timestamp="1660235081330" />
+    <state width="1397" height="310" key="GridCell.Tab.0.left" timestamp="1660235081330">
+      <screen x="0" y="0" width="1440" height="960" />
+    </state>
+    <state width="1397" height="391" key="GridCell.Tab.0.left/0.0.1440.912@0.0.1440.912" timestamp="1660222991214" />
+    <state width="1397" height="310" key="GridCell.Tab.0.left/0.0.1440.960@0.0.1440.960" timestamp="1660235081330" />
+    <state width="1397" height="310" key="GridCell.Tab.0.right" timestamp="1660235081330">
+      <screen x="0" y="0" width="1440" height="960" />
+    </state>
+    <state width="1397" height="391" key="GridCell.Tab.0.right/0.0.1440.912@0.0.1440.912" timestamp="1660222991214" />
+    <state width="1397" height="310" key="GridCell.Tab.0.right/0.0.1440.960@0.0.1440.960" timestamp="1660235081330" />
+    <state width="1397" height="420" key="GridCell.Tab.1.bottom" timestamp="1660057573282">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="420" key="GridCell.Tab.1.bottom/0.0.1440.912@0.0.1440.912" timestamp="1660057573282" />
+    <state width="1397" height="306" key="GridCell.Tab.1.bottom/0.0.1440.960@0.0.1440.960" timestamp="1659784217942" />
+    <state width="1397" height="420" key="GridCell.Tab.1.center" timestamp="1660057573282">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="420" key="GridCell.Tab.1.center/0.0.1440.912@0.0.1440.912" timestamp="1660057573282" />
+    <state width="1397" height="306" key="GridCell.Tab.1.center/0.0.1440.960@0.0.1440.960" timestamp="1659784217942" />
+    <state width="1397" height="420" key="GridCell.Tab.1.left" timestamp="1660057573281">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="420" key="GridCell.Tab.1.left/0.0.1440.912@0.0.1440.912" timestamp="1660057573281" />
+    <state width="1397" height="306" key="GridCell.Tab.1.left/0.0.1440.960@0.0.1440.960" timestamp="1659784217942" />
+    <state width="1397" height="420" key="GridCell.Tab.1.right" timestamp="1660057573282">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="420" key="GridCell.Tab.1.right/0.0.1440.912@0.0.1440.912" timestamp="1660057573282" />
+    <state width="1397" height="306" key="GridCell.Tab.1.right/0.0.1440.960@0.0.1440.960" timestamp="1659784217942" />
+    <state x="251" y="136" key="Maven.ArtifactSearchDialog" timestamp="1659695399168">
+      <screen x="0" y="0" width="1440" height="960" />
+    </state>
+    <state x="251" y="136" key="Maven.ArtifactSearchDialog/0.0.1440.960@0.0.1440.960" timestamp="1659695399168" />
+    <state x="201" y="52" key="SettingsEditor" timestamp="1660049796911">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="201" y="52" key="SettingsEditor/0.0.1440.912@0.0.1440.912" timestamp="1660049796911" />
+    <state x="201" y="55" key="SettingsEditor/0.0.1440.960@0.0.1440.960" timestamp="1659797950232" />
+    <state x="108" y="91" key="new project wizard" timestamp="1659703587427">
+      <screen x="0" y="0" width="1440" height="960" />
+    </state>
+    <state x="108" y="91" key="new project wizard/0.0.1440.960@0.0.1440.960" timestamp="1659703587427" />
+    <state x="463" y="108" key="refactoring.ChangeSignatureDialog" timestamp="1659782364963">
+      <screen x="0" y="0" width="1440" height="960" />
+    </state>
+    <state x="463" y="108" key="refactoring.ChangeSignatureDialog/0.0.1440.960@0.0.1440.960" timestamp="1659782364963" />
+  </component>
+</project>

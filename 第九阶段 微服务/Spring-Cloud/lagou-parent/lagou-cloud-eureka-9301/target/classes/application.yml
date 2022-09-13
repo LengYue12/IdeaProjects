@@ -1,0 +1,16 @@
+server:
+  port: 9301
+spring:
+  application:
+    name: lagou-cloud-eureka
+eureka:
+  client: # Eureka Server 本身也是 Eureka的一个客户端，因为在集群下需要与其他Eureka Server 进行数据的同步
+    service-url: # 定义eureka server url，如果是集群情况下，defaultZone设置为集群下的别的Eureka Server 的地址，多个地址用，隔开
+      defaultZone:  http://LagouCloudEurekaServerA:9300/eureka
+    register-with-eureka: true # 表示是否向Eureka中心注册自己的信息,因为自己就是 Eureka Server 所以不进行注册，默认为true
+    fetch-registry: true # 表示是否查询/拉取 Eureka Server 服务注册列表，默认为true
+  instance:
+    hostname: LagouCloudEurekaServerB  # 表示当前eureka实例的主机名
+    prefer-ip-address: true
+    #自定义实例显示格式，加上版本号，便于多版本管理，注意是ip-address，早期版本是ipAddress
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:1.0-SNAPSHOT

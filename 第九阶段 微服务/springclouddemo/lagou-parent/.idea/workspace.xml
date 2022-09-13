@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bfe86879-5464-4d7e-9329-6bcdcc1aaf38" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\software\repository" />
+        <option name="mavenHome" value="D:/software/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\software\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2DhRRLsmbIAGgnH0jWNSf8XRCrk" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15136719" />
+    <property name="project.structure.side.proportion" value="0.25609756" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lagou" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PageApplication9101">
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="lagou-cloud-config" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="lagou-cloud-eureka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.eureka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.eureka.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication9201" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lagou-cloud-eureka-9201" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.eureka.EurekaApplication9201" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GateWayServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="lagou-cloud-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.GateWayServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lagou-service-page" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.PageApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PageApplication9101" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lagou-service-page-9101" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.PageApplication9101" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lagou-service-product" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.ProductApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductApplication9001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lagou-service-product-9001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.ProductApplication9001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ConfigServerApplication" />
+        <item itemvalue="Spring Boot.GateWayServerApplication" />
+        <item itemvalue="Spring Boot.EurekaApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bfe86879-5464-4d7e-9329-6bcdcc1aaf38" name="默认更改列表" comment="" />
+      <created>1661149321162</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661149321162</updated>
+      <workItem from="1661149324492" duration="9705000" />
+      <workItem from="1661249802729" duration="9362000" />
+      <workItem from="1661316148248" duration="14700000" />
+      <workItem from="1661422191234" duration="7707000" />
+      <workItem from="1661494151818" duration="1581000" />
+      <workItem from="1661592828273" duration="7501000" />
+      <workItem from="1661608471541" duration="1422000" />
+      <workItem from="1661610672628" duration="114000" />
+      <workItem from="1661661730813" duration="1729000" />
+      <workItem from="1661671964279" duration="10129000" />
+      <workItem from="1661763013757" duration="676000" />
+      <workItem from="1661770708067" duration="28000" />
+      <workItem from="1661771196707" duration="360000" />
+      <workItem from="1661771579020" duration="11000" />
+      <workItem from="1661772023071" duration="18000" />
+      <workItem from="1661772374960" duration="58000" />
+      <workItem from="1661776124243" duration="53000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="526" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1661331873475">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="526" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.912@0.0.1440.912" timestamp="1661331873475" />
+    <state x="313" y="115" key="#项目结构" timestamp="1661673304434">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="313" y="115" key="#项目结构/0.0.1440.912@0.0.1440.912" timestamp="1661673304434" />
+    <state width="1397" height="324" key="GridCell.Tab.0.bottom" timestamp="1661498690901">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="324" key="GridCell.Tab.0.bottom/0.0.1440.912@0.0.1440.912" timestamp="1661498690901" />
+    <state width="1397" height="324" key="GridCell.Tab.0.center" timestamp="1661498690901">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="324" key="GridCell.Tab.0.center/0.0.1440.912@0.0.1440.912" timestamp="1661498690901" />
+    <state width="1397" height="324" key="GridCell.Tab.0.left" timestamp="1661498690901">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="324" key="GridCell.Tab.0.left/0.0.1440.912@0.0.1440.912" timestamp="1661498690901" />
+    <state width="1397" height="324" key="GridCell.Tab.0.right" timestamp="1661498690901">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="324" key="GridCell.Tab.0.right/0.0.1440.912@0.0.1440.912" timestamp="1661498690901" />
+    <state width="1397" height="324" key="GridCell.Tab.1.bottom" timestamp="1661498690901">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="324" key="GridCell.Tab.1.bottom/0.0.1440.912@0.0.1440.912" timestamp="1661498690901" />
+    <state width="1397" height="324" key="GridCell.Tab.1.center" timestamp="1661498690901">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="324" key="GridCell.Tab.1.center/0.0.1440.912@0.0.1440.912" timestamp="1661498690901" />
+    <state width="1397" height="324" key="GridCell.Tab.1.left" timestamp="1661498690901">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="324" key="GridCell.Tab.1.left/0.0.1440.912@0.0.1440.912" timestamp="1661498690901" />
+    <state width="1397" height="324" key="GridCell.Tab.1.right" timestamp="1661498690901">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="324" key="GridCell.Tab.1.right/0.0.1440.912@0.0.1440.912" timestamp="1661498690901" />
+    <state width="1397" height="521" key="GridCell.Tab.2.bottom" timestamp="1661176194529">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="521" key="GridCell.Tab.2.bottom/0.0.1440.912@0.0.1440.912" timestamp="1661176194529" />
+    <state width="1397" height="521" key="GridCell.Tab.2.center" timestamp="1661176194529">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="521" key="GridCell.Tab.2.center/0.0.1440.912@0.0.1440.912" timestamp="1661176194529" />
+    <state width="1397" height="521" key="GridCell.Tab.2.left" timestamp="1661176194529">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="521" key="GridCell.Tab.2.left/0.0.1440.912@0.0.1440.912" timestamp="1661176194529" />
+    <state width="1397" height="521" key="GridCell.Tab.2.right" timestamp="1661176194529">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="521" key="GridCell.Tab.2.right/0.0.1440.912@0.0.1440.912" timestamp="1661176194529" />
+    <state x="222" y="62" key="SettingsEditor" timestamp="1661153033894">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="222" y="62" key="SettingsEditor/0.0.1440.912@0.0.1440.912" timestamp="1661153033894" />
+    <state x="108" y="151" key="new project wizard" timestamp="1661602174262">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="108" y="151" key="new project wizard/0.0.1440.912@0.0.1440.912" timestamp="1661602174262" />
+  </component>
+</project>

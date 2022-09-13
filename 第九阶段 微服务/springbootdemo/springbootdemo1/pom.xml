@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.lagou</groupId>
+    <artifactId>springbootdemo1</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+<!--
+    所有的springBoot项目都会直接或者间接地继承 spring-boot-starter-parent
+        1. 指定项目的编码格式为UTF-8
+        2. 指定JDK版本为1.8
+        3. 对项目依赖的版本进行管理，当前项目再引入其他常用的依赖时，就不需要再指定版本号了，避免版本冲突的问题
+        4. 默认的资源过滤和插件管理
+    -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.2</version>
+    </parent>
+
+    <dependencies>
+<!--        引入Spring Web 及 Spring MVC相关的依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
+
+<!--  可以将project打包为一个可以执行的jar  -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

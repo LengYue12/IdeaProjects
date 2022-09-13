@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/module01/module01.iml" filepath="$PROJECT_DIR$/module01/module01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my_mvc_test/my_mvc_test.iml" filepath="$PROJECT_DIR$/my_mvc_test/my_mvc_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task01_demo01/task01_demo01.iml" filepath="$PROJECT_DIR$/task01_demo01/task01_demo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task01_demo02/task01_demo02.iml" filepath="$PROJECT_DIR$/task01_demo02/task01_demo02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task02_demo01/task02_demo01.iml" filepath="$PROJECT_DIR$/task02_demo01/task02_demo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task02_demo02/task02_demo02.iml" filepath="$PROJECT_DIR$/task02_demo02/task02_demo02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task02_demo03/task02_demo03.iml" filepath="$PROJECT_DIR$/task02_demo03/task02_demo03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task03_demo01/task03_demo01.iml" filepath="$PROJECT_DIR$/task03_demo01/task03_demo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task03_demo02/task03_demo02.iml" filepath="$PROJECT_DIR$/task03_demo02/task03_demo02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task03_demo03/task03_demo03.iml" filepath="$PROJECT_DIR$/task03_demo03/task03_demo03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task04_demo01/task04_demo01.iml" filepath="$PROJECT_DIR$/task04_demo01/task04_demo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task04_demo03/task04_demo03.iml" filepath="$PROJECT_DIR$/task04_demo03/task04_demo03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task05_demo01/task05_demo01.iml" filepath="$PROJECT_DIR$/task05_demo01/task05_demo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task05_demo02/task05_demo02.iml" filepath="$PROJECT_DIR$/task05_demo02/task05_demo02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task05_demo03/task05_demo03.iml" filepath="$PROJECT_DIR$/task05_demo03/task05_demo03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task05_demo04/task05_demo04.iml" filepath="$PROJECT_DIR$/task05_demo04/task05_demo04.iml" />
+    </modules>
+  </component>
+</project>

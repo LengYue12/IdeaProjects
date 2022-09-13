@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generate.ProductsDao">
+  <resultMap id="BaseResultMap" type="generate.Products">
+    <id column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="price" jdbcType="DOUBLE" property="price" />
+    <result column="p_desc" jdbcType="VARCHAR" property="pDesc" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="goods_stock" jdbcType="INTEGER" property="goodsStock" />
+    <result column="goods_type" jdbcType="INTEGER" property="goodsType" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    pid, `name`, price, p_desc, `status`, goods_stock, goods_type
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from products
+    where pid = #{pid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from products
+    where pid = #{pid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="pid" keyProperty="pid" parameterType="generate.Products" useGeneratedKeys="true">
+    insert into products (`name`, price, p_desc, 
+      `status`, goods_stock, goods_type
+      )
+    values (#{name,jdbcType=VARCHAR}, #{price,jdbcType=DOUBLE}, #{pDesc,jdbcType=VARCHAR}, 
+      #{status,jdbcType=INTEGER}, #{goodsStock,jdbcType=INTEGER}, #{goodsType,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="pid" keyProperty="pid" parameterType="generate.Products" useGeneratedKeys="true">
+    insert into products
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        `name`,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="pDesc != null">
+        p_desc,
+      </if>
+      <if test="status != null">
+        `status`,
+      </if>
+      <if test="goodsStock != null">
+        goods_stock,
+      </if>
+      <if test="goodsType != null">
+        goods_type,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=DOUBLE},
+      </if>
+      <if test="pDesc != null">
+        #{pDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="goodsStock != null">
+        #{goodsStock,jdbcType=INTEGER},
+      </if>
+      <if test="goodsType != null">
+        #{goodsType,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="generate.Products">
+    update products
+    <set>
+      <if test="name != null">
+        `name` = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=DOUBLE},
+      </if>
+      <if test="pDesc != null">
+        p_desc = #{pDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        `status` = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="goodsStock != null">
+        goods_stock = #{goodsStock,jdbcType=INTEGER},
+      </if>
+      <if test="goodsType != null">
+        goods_type = #{goodsType,jdbcType=INTEGER},
+      </if>
+    </set>
+    where pid = #{pid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="generate.Products">
+    update products
+    set `name` = #{name,jdbcType=VARCHAR},
+      price = #{price,jdbcType=DOUBLE},
+      p_desc = #{pDesc,jdbcType=VARCHAR},
+      `status` = #{status,jdbcType=INTEGER},
+      goods_stock = #{goodsStock,jdbcType=INTEGER},
+      goods_type = #{goodsType,jdbcType=INTEGER}
+    where pid = #{pid,jdbcType=INTEGER}
+  </update>
+</mapper>

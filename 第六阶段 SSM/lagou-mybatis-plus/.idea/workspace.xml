@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="80193488-b472-4206-a496-b96f9a64c6e2" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="lagou-mybatis-plus" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\software\repository" />
+        <option name="mavenHome" value="D:/software/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\software\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2DZ16bG9vmI751wVBTiV3u1av82" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15136719" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\idea\lagou-mp-springboot\src\main\resources\mapper" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lagou.pojo" />
+      <recent name="com.lagou.mapper" />
+      <recent name="mapper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\idea\lagou-mybatis-plus\lagou-mybatis-plus-spring\src\main\resources" />
+      <recent name="D:\workspace\idea\lagou-mp-springboot\src\main\resources" />
+      <recent name="D:\workspace\idea\lagou-mybatis-plus\lagou-mybatis-plus-spring\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.LagouMpSpringbootApplicationTests.test">
+    <configuration name="LagouMpSpringbootApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lagou-mp-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagou" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.LagouMpSpringbootApplicationTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LagouMpSpringbootApplicationTests.testDeleteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lagou-mp-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagou" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.LagouMpSpringbootApplicationTests" />
+      <option name="METHOD_NAME" value="testDeleteById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LagouMpSpringbootApplicationTests.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lagou-mp-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagou" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.LagouMpSpringbootApplicationTests" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LagouMpSpringbootApplicationTests.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lagou-mp-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagou" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.LagouMpSpringbootApplicationTests" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LagouMpSpringbootApplicationTests.testSelectById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lagou-mp-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagou" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.LagouMpSpringbootApplicationTests" />
+      <option name="METHOD_NAME" value="testSelectById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LagouMpSpringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lagou-mp-springboot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.LagouMpSpringbootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LagouMpSpringbootApplicationTests.test" />
+        <item itemvalue="JUnit.LagouMpSpringbootApplicationTests.testFindAll" />
+        <item itemvalue="JUnit.LagouMpSpringbootApplicationTests.testSelectById" />
+        <item itemvalue="JUnit.LagouMpSpringbootApplicationTests.testDeleteById" />
+        <item itemvalue="JUnit.LagouMpSpringbootApplicationTests.testInsert" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="80193488-b472-4206-a496-b96f9a64c6e2" name="默认更改列表" comment="" />
+      <created>1660891618309</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660891618309</updated>
+      <workItem from="1660891621098" duration="2143000" />
+      <workItem from="1660893800435" duration="22000" />
+      <workItem from="1660893835672" duration="12873000" />
+      <workItem from="1660911227893" duration="3729000" />
+      <workItem from="1660916019782" duration="2091000" />
+      <workItem from="1660988710643" duration="8438000" />
+      <workItem from="1661005607950" duration="733000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="526" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1661001825320">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="526" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.912@0.0.1440.912" timestamp="1661001825320" />
+    <state width="1397" height="287" key="GridCell.Tab.0.bottom" timestamp="1661003074609">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="287" key="GridCell.Tab.0.bottom/0.0.1440.912@0.0.1440.912" timestamp="1661003074609" />
+    <state width="1397" height="287" key="GridCell.Tab.0.center" timestamp="1661003074609">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="287" key="GridCell.Tab.0.center/0.0.1440.912@0.0.1440.912" timestamp="1661003074609" />
+    <state width="1397" height="287" key="GridCell.Tab.0.left" timestamp="1661003074609">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="287" key="GridCell.Tab.0.left/0.0.1440.912@0.0.1440.912" timestamp="1661003074609" />
+    <state width="1397" height="287" key="GridCell.Tab.0.right" timestamp="1661003074609">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="287" key="GridCell.Tab.0.right/0.0.1440.912@0.0.1440.912" timestamp="1661003074609" />
+    <state width="1397" height="287" key="GridCell.Tab.1.bottom" timestamp="1661003074609">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="287" key="GridCell.Tab.1.bottom/0.0.1440.912@0.0.1440.912" timestamp="1661003074609" />
+    <state width="1397" height="287" key="GridCell.Tab.1.center" timestamp="1661003074609">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="287" key="GridCell.Tab.1.center/0.0.1440.912@0.0.1440.912" timestamp="1661003074609" />
+    <state width="1397" height="287" key="GridCell.Tab.1.left" timestamp="1661003074609">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="287" key="GridCell.Tab.1.left/0.0.1440.912@0.0.1440.912" timestamp="1661003074609" />
+    <state width="1397" height="287" key="GridCell.Tab.1.right" timestamp="1661003074609">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="287" key="GridCell.Tab.1.right/0.0.1440.912@0.0.1440.912" timestamp="1661003074609" />
+    <state x="201" y="31" key="SettingsEditor" timestamp="1660911214417">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="201" y="31" key="SettingsEditor/0.0.1440.912@0.0.1440.912" timestamp="1660911214417" />
+    <state x="108" y="151" key="new project wizard" timestamp="1660896439912">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="108" y="151" key="new project wizard/0.0.1440.912@0.0.1440.912" timestamp="1660896439912" />
+  </component>
+</project>

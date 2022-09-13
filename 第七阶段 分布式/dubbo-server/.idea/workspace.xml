@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7ed71967-0a39-43e9-8027-b32f2ff5487d" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="spring-beans.schema" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\software\repository" />
+        <option name="mavenHome" value="D:/software/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\software\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2C9Xc9Egz7oR8HreR93mX4QKvAl" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="DockerRegistry" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="service.impl" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\idea\dubbo-server\src\main\webapp" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7ed71967-0a39-43e9-8027-b32f2ff5487d" name="默认更改列表" comment="" />
+      <created>1658215850485</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658215850485</updated>
+      <workItem from="1658215853083" duration="1182000" />
+      <workItem from="1658217079877" duration="14626000" />
+      <workItem from="1658247068447" duration="185000" />
+      <workItem from="1658397544829" duration="4055000" />
+      <workItem from="1658461824882" duration="50000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="526" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1658233281421">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="526" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.912@0.0.1440.912" timestamp="1658233281421" />
+    <state x="533" y="394" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1658222004243">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="533" y="394" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1440.912@0.0.1440.912" timestamp="1658222004243" />
+    <state x="501" y="212" key="FileChooserDialogImpl" timestamp="1658398417248">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="501" y="212" key="FileChooserDialogImpl/0.0.1440.912@0.0.1440.912" timestamp="1658398417248" />
+    <state width="1397" height="232" key="GridCell.Tab.0.bottom" timestamp="1658407261136">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="232" key="GridCell.Tab.0.bottom/0.0.1440.912@0.0.1440.912" timestamp="1658407261136" />
+    <state width="1397" height="232" key="GridCell.Tab.0.center" timestamp="1658407261136">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="232" key="GridCell.Tab.0.center/0.0.1440.912@0.0.1440.912" timestamp="1658407261136" />
+    <state width="1397" height="232" key="GridCell.Tab.0.left" timestamp="1658407261136">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="232" key="GridCell.Tab.0.left/0.0.1440.912@0.0.1440.912" timestamp="1658407261136" />
+    <state width="1397" height="232" key="GridCell.Tab.0.right" timestamp="1658407261136">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="232" key="GridCell.Tab.0.right/0.0.1440.912@0.0.1440.912" timestamp="1658407261136" />
+    <state x="308" y="119" key="Registry" timestamp="1658223504137">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="308" y="119" key="Registry/0.0.1440.912@0.0.1440.912" timestamp="1658223504137" />
+    <state x="222" y="62" key="SettingsEditor" timestamp="1658223351932">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="222" y="62" key="SettingsEditor/0.0.1440.912@0.0.1440.912" timestamp="1658223351932" />
+    <state x="108" y="152" key="new project wizard" timestamp="1658240359935">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="108" y="152" key="new project wizard/0.0.1440.912@0.0.1440.912" timestamp="1658240359935" />
+    <state x="377" y="209" width="672" height="677" key="run.anything.popup" timestamp="1658398694387">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="377" y="209" width="672" height="677" key="run.anything.popup/0.0.1440.912@0.0.1440.912" timestamp="1658398694387" />
+    <state x="383" y="193" width="672" height="678" key="search.everywhere.popup" timestamp="1658223350012">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="383" y="193" width="672" height="678" key="search.everywhere.popup/0.0.1440.912@0.0.1440.912" timestamp="1658223350012" />
+  </component>
+</project>

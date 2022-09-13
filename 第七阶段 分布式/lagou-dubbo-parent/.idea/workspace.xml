@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c204c60b-31ce-4e44-ad81-bfbe556e1350" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\software\repository" />
+        <option name="mavenHome" value="D:/software/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\software\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2CHt8VTrkrzgr44UBzJ3PJ8AoOq" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lagou-dubbo-web/src/main/webapp" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\idea\lagou-dubbo-parent\lagou-dubbo-web\src\main\webapp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\idea\lagou-dubbo-parent\lagou-dubbo-web\src\main\webapp" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn compile" />
+      <command value="mvn install" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="TestDao.method1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lagou-dubbo-dao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TestDao" />
+      <option name="METHOD_NAME" value="method1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestDao.method1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c204c60b-31ce-4e44-ad81-bfbe556e1350" name="默认更改列表" comment="" />
+      <created>1658471178514</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658471178514</updated>
+      <workItem from="1658471182243" duration="16211000" />
+      <workItem from="1658494223010" duration="1367000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="176" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1658477222981">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="176" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.912@0.0.1440.912" timestamp="1658477222981" />
+    <state x="526" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1658477149550">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="526" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.912@0.0.1440.912" timestamp="1658477149550" />
+    <state x="501" y="212" key="FileChooserDialogImpl" timestamp="1658480959179">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="501" y="212" key="FileChooserDialogImpl/0.0.1440.912@0.0.1440.912" timestamp="1658480959179" />
+    <state width="1397" height="545" key="GridCell.Tab.0.bottom" timestamp="1658495603902">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="545" key="GridCell.Tab.0.bottom/0.0.1440.912@0.0.1440.912" timestamp="1658495603902" />
+    <state width="1397" height="545" key="GridCell.Tab.0.center" timestamp="1658495603902">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="545" key="GridCell.Tab.0.center/0.0.1440.912@0.0.1440.912" timestamp="1658495603902" />
+    <state width="1397" height="545" key="GridCell.Tab.0.left" timestamp="1658495603902">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="545" key="GridCell.Tab.0.left/0.0.1440.912@0.0.1440.912" timestamp="1658495603902" />
+    <state width="1397" height="545" key="GridCell.Tab.0.right" timestamp="1658495603902">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="545" key="GridCell.Tab.0.right/0.0.1440.912@0.0.1440.912" timestamp="1658495603902" />
+    <state x="377" y="209" width="672" height="677" key="run.anything.popup" timestamp="1658482770283">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="377" y="209" width="672" height="677" key="run.anything.popup/0.0.1440.912@0.0.1440.912" timestamp="1658482770283" />
+  </component>
+</project>

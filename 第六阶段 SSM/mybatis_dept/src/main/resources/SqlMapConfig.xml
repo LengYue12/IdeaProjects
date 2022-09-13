@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<!--mybatis核心配置文件-->
+<configuration>
+
+<!--    加载properties文件-->
+<properties resource="jdbc.properties"/>
+
+<!--    类型别名配置-->
+    <typeAliases>
+        <package name="com.lagou.domain"/>
+    </typeAliases>
+
+
+<!--    配置数据源信息-->
+<environments default="dev">
+<!--    开发的运行环境-->
+    <environment id="dev">
+<!--        事务管理器使用JDBC-->
+        <transactionManager type="JDBC"></transactionManager>
+<!--        使用连接池-->
+        <dataSource type="POOLED">
+<!--            配置数据库相关信息-->
+            <property name="driver" value="${jdbc.driver}"/>
+            <property name="url" value="${jdbc.url}"/>
+            <property name="username" value="${jdbc.username}"/>
+            <property name="password" value="${jdbc.password}"/>
+        </dataSource>
+    </environment>
+
+</environments>
+
+
+    
+<!--  加载映射配置文件  -->
+    <mappers>
+        <!--    批量加载，写当前接口所在的包，
+            因为当前的映射文件和接口处在同包同名的状态的，配置接口所在的包就ok-->
+        <package name="com.lagou.dao"/>
+    </mappers>
+    
+
+</configuration>

@@ -1,0 +1,84 @@
+server:
+  port: 9100
+spring:
+  application:
+    name: lagou-service-order
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: 123456
+eureka:
+  client:
+    service-url: # eureka server的路径
+      defaultZone:  http://LagouCloudEurekaServerA:9300/eureka,http://LagouCloudEurekaServerB:9301/eureka
+    registry-fetch-interval-seconds: 30 # 从Eureka Server 拉取服务列表的间隔时间
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:@project.version@
+
+# 针对的被调用方微服务名称，不加就是全局生效
+lagou-service-goods:
+  ribbon:
+    #请求连接超时时间
+    #ConnectTimeout: 2000
+    #请求处理超时时间
+    #ReadTimeout: 5000
+    #对所有操作都进行重试
+    OkToRetryOnAllOperations: true
+    ####根据如上配置，当访问到故障请求的时候，它会再尝试访问一次当前实例（次数由MaxAutoRetries配置），
+    ####如果不行，就换一个实例进行访问，如果还不行，再换一次实例访问（更换次数由 MaxAutoRetriesNextServer配置），
+    ####如果依然不行，返回失败信息。
+    MaxAutoRetries: 0 #对当前选中实例重试次数，不包括第一次调用
+    MaxAutoRetriesNextServer: 0 #切换实例的重试次数
+    #NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule #随机策略
+
+
+# 配置熔断策略：
+hystrix:
+  command:
+    default:
+      circuitBreaker:
+        # 强制打开熔断器，如果该属性设置为true，强制断路器进入打开状态，将会拒绝所有的请求。默认false关闭的
+        forceOpen: false
+        # 触发熔断错误比例阈值，默认值50%
+        errorThresholdPercentage: 50
+        # 熔断后休眠时长，默认值5秒
+        sleepWindowInMilliseconds: 5000
+        # 熔断触发最小请求次数，默认值是20
+        requestVolumeThreshold: 2
+      execution:
+        isolation:
+          thread:
+            # 超时时间5秒触发熔断
+            timeoutInMilliseconds: 5000
+  threadpool:
+    default:
+      coreSize: 16  #并发执行的最大线程数，默认10
+      maxQueueSize: 10000 # 最大队列数
+      queueSizeRejectionThreshold: 6000 # 队列拒绝阈值
+
+# springboot中暴露健康检查等断点接口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  # 暴露健康接口的细节
+  endpoint:
+    health:
+      show-details: always
+
+
+# 开启Feign对熔断器的支持
+feign:
+  hystrix:
+    enabled: true
+  # 开启请求和响应的压缩设置，默认是不开启的
+  compression:
+    request:
+      enabled: true # 开启
+      mime-types: text/xml,application/xml,application/json # 默认值
+      min-request-size: 2048
+    response:
+      enabled: true

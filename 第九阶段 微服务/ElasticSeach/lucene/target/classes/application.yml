@@ -1,0 +1,16 @@
+server:
+  port: 9000
+Spring:
+  application:
+    name: lagou-lucene
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/es?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: 123456
+
+#\u5F00\u542F\u9A7C\u5CF0\u547D\u540D\u5339\u914D\u6620\u5C04
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+

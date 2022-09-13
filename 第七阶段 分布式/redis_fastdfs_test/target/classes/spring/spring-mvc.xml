@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd
+">
+
+<!--    扫描注解的包-->
+    <context:component-scan base-package="controller"/>
+
+<!--    扫描注解-->
+<mvc:annotation-driven/>
+
+
+<!--    视图解析器-->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+
+<!--    配置放行静态资源-->
+    <mvc:default-servlet-handler/>
+
+<!--   上传文件的解析器（规定上传文件的大小限制）-->
+<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+<!--    限制文件最大：2GB-->
+    <property name="maxUploadSize" value="2048000000"/>
+</bean>
+
+    <!--   redis 配置-->
+    <bean id="connectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
+        <!--        主机-->
+        <property name="hostName" value="192.168.114.128"/>
+        <!--                  端口-->
+        <property name="port" value="6379"/>
+    </bean>
+
+    <!--    spring为连接Redis，提供的一个模板工具类-->
+    <bean id="stringRedisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate">
+        <!--        连接工厂-->
+        <property name="connectionFactory" ref="connectionFactory"/>
+    </bean>
+
+</beans>

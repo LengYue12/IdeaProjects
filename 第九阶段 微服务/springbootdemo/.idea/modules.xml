@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bootmybatis3/bootmybatis3.iml" filepath="$PROJECT_DIR$/bootmybatis3/bootmybatis3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lombokDemo/lombokDemo.iml" filepath="$PROJECT_DIR$/lombokDemo/lombokDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springbootdemo/springbootdemo.iml" filepath="$PROJECT_DIR$/springbootdemo/springbootdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springbootdemo1/springbootdemo1.iml" filepath="$PROJECT_DIR$/springbootdemo1/springbootdemo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springbootdemo2/springbootdemo2.iml" filepath="$PROJECT_DIR$/springbootdemo2/springbootdemo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springbootdemo5/springbootdemo5.iml" filepath="$PROJECT_DIR$/springbootdemo5/springbootdemo5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thymeleaf/thymeleaf.iml" filepath="$PROJECT_DIR$/thymeleaf/thymeleaf.iml" />
+    </modules>
+  </component>
+</project>

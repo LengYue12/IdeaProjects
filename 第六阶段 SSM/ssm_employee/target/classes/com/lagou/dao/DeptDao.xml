@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lagou.dao.DeptDao">
+<!--   根据传过来的dept_id 查询具体的部门信息   Dept findById(Integer dept_id);-->
+    <select id="findById" resultType="dept" parameterType="int">
+        select * from tb_dept where dept_id = #{dept_id}
+    </select>
+
+
+
+<!--    List<Dept> find();-->
+    <select id="find" resultType="dept">
+        select * from tb_dept
+    </select>
+</mapper>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e44c67b7-dac3-4d13-a9bc-6f948b8dd581" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\software\repository" />
+        <option name="mavenHome" value="D:/software/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\software\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Csu65IDa7UUz5ICULDOkk1MBZ2" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.25609756" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\idea\redis_fastdfs_test\src\main\webapp" />
+      <recent name="D:\workspace\idea\redis_fastdfs_test\src\main\java" />
+      <recent name="D:\workspace\idea\redis_fastdfs_test\src\main\resources" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e44c67b7-dac3-4d13-a9bc-6f948b8dd581" name="默认更改列表" comment="" />
+      <created>1659603434936</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659603434936</updated>
+      <workItem from="1659603437456" duration="5802000" />
+      <workItem from="1659610179408" duration="7713000" />
+      <workItem from="1659619292938" duration="92000" />
+      <workItem from="1659619403890" duration="53000" />
+      <workItem from="1659619716974" duration="4044000" />
+      <workItem from="1659623996141" duration="23000" />
+      <workItem from="1659624109101" duration="1669000" />
+      <workItem from="1659625903299" duration="705000" />
+      <workItem from="1659626643629" duration="26000" />
+      <workItem from="1659626788516" duration="36000" />
+      <workItem from="1659626903707" duration="1726000" />
+      <workItem from="1659628739586" duration="19000" />
+      <workItem from="1659682837490" duration="385000" />
+      <workItem from="1660153538342" duration="149000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="523" y="394" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1659603648086">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="523" y="394" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1440.912@0.0.1440.912" timestamp="1659603648086" />
+    <state x="531" y="394" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1659603654366">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="531" y="394" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1440.912@0.0.1440.912" timestamp="1659603654366" />
+    <state x="391" y="229" key="FileChooserDialogImpl" timestamp="1659682889112">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="391" y="229" key="FileChooserDialogImpl/0.0.1440.912@0.0.1440.912" timestamp="1659682889112" />
+    <state width="1397" height="419" key="GridCell.Tab.0.bottom" timestamp="1659628645469">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="419" key="GridCell.Tab.0.bottom/0.0.1440.912@0.0.1440.912" timestamp="1659628645469" />
+    <state width="1397" height="446" key="GridCell.Tab.0.bottom/0.0.1440.960@0.0.1440.960" timestamp="1659625792886" />
+    <state width="1397" height="419" key="GridCell.Tab.0.center" timestamp="1659628645469">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="419" key="GridCell.Tab.0.center/0.0.1440.912@0.0.1440.912" timestamp="1659628645469" />
+    <state width="1397" height="446" key="GridCell.Tab.0.center/0.0.1440.960@0.0.1440.960" timestamp="1659625792886" />
+    <state width="1397" height="419" key="GridCell.Tab.0.left" timestamp="1659628645469">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="419" key="GridCell.Tab.0.left/0.0.1440.912@0.0.1440.912" timestamp="1659628645469" />
+    <state width="1397" height="446" key="GridCell.Tab.0.left/0.0.1440.960@0.0.1440.960" timestamp="1659625792886" />
+    <state width="1397" height="419" key="GridCell.Tab.0.right" timestamp="1659628645469">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="419" key="GridCell.Tab.0.right/0.0.1440.912@0.0.1440.912" timestamp="1659628645469" />
+    <state width="1397" height="446" key="GridCell.Tab.0.right/0.0.1440.960@0.0.1440.960" timestamp="1659625792886" />
+    <state x="222" y="62" key="SettingsEditor" timestamp="1659603655126">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="222" y="62" key="SettingsEditor/0.0.1440.912@0.0.1440.912" timestamp="1659603655126" />
+    <state x="519" y="234" key="chooseDestDirectoryDialog" timestamp="1659617047416">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="519" y="234" key="chooseDestDirectoryDialog/0.0.1440.912@0.0.1440.912" timestamp="1659617047416" />
+  </component>
+</project>

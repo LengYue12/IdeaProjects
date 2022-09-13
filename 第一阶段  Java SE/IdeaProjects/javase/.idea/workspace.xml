@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f94ed407-dd60-4022-bbba-03f992cbfe36" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="module-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="20J5VoTdBUdqH4AGPEnVlav7AcQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="DockerRegistry" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lagou.buffer" />
+      <recent name="com.lagou.task19" />
+      <recent name="com.lagou" />
+      <recent name="com.lagou.task10" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ServerTest">
+    <configuration name="服务器" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lagou.buffer.seletor.服务器" />
+      <module name="NIO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.buffer.seletor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Channel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lagou.buffer.Channel" />
+      <module name="NIO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.buffer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lagou.test.ClientTest" />
+      <module name="ExamSystemClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lagou.test.ClientTest" />
+      <module name="ExamSystemClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lagou.test.ClientTest" />
+      <module name="ExamSystemClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lagou.test.ServerTest" />
+      <module name="ExamSystemServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ClientTest" />
+        <item itemvalue="Application.ServerTest" />
+        <item itemvalue="Application.服务器" />
+        <item itemvalue="Application.Channel" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f94ed407-dd60-4022-bbba-03f992cbfe36" name="Default Changelist" comment="" />
+      <created>1635749876234</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635749876234</updated>
+      <workItem from="1635749878525" duration="21574000" />
+      <workItem from="1635841099667" duration="12055000" />
+      <workItem from="1636091904388" duration="594000" />
+      <workItem from="1636175033584" duration="7939000" />
+      <workItem from="1636250031082" duration="19665000" />
+      <workItem from="1636339685711" duration="17476000" />
+      <workItem from="1636435875956" duration="931000" />
+      <workItem from="1636450109988" duration="55000" />
+      <workItem from="1636944458395" duration="668000" />
+      <workItem from="1636949841717" duration="26000" />
+      <workItem from="1637562990570" duration="14799000" />
+      <workItem from="1637828182938" duration="1221000" />
+      <workItem from="1637905822721" duration="9298000" />
+      <workItem from="1637979500554" duration="17343000" />
+      <workItem from="1638073365746" duration="19678000" />
+      <workItem from="1638153039689" duration="29400000" />
+      <workItem from="1638242490004" duration="31695000" />
+      <workItem from="1638324424705" duration="12709000" />
+      <workItem from="1638412973798" duration="23179000" />
+      <workItem from="1638501733577" duration="2560000" />
+      <workItem from="1638594896394" duration="13958000" />
+      <workItem from="1638790998776" duration="1156000" />
+      <workItem from="1638847514418" duration="8708000" />
+      <workItem from="1638931368128" duration="4040000" />
+      <workItem from="1639141687677" duration="15901000" />
+      <workItem from="1639193971479" duration="7029000" />
+      <workItem from="1639566478379" duration="2340000" />
+      <workItem from="1640179829874" duration="5179000" />
+      <workItem from="1640191454048" duration="593000" />
+      <workItem from="1640231615342" duration="8290000" />
+      <workItem from="1640325012668" duration="11726000" />
+      <workItem from="1640506779301" duration="726000" />
+      <workItem from="1640511755084" duration="242000" />
+      <workItem from="1640512672340" duration="7575000" />
+      <workItem from="1640596461435" duration="14738000" />
+      <workItem from="1640786123964" duration="4166000" />
+      <workItem from="1640793710750" duration="547000" />
+      <workItem from="1641020325971" duration="601000" />
+      <workItem from="1641025290701" duration="19703000" />
+      <workItem from="1641091352531" duration="228000" />
+      <workItem from="1641091605641" duration="11498000" />
+      <workItem from="1641177028683" duration="2509000" />
+      <workItem from="1641291267234" duration="13695000" />
+      <workItem from="1641363386695" duration="4755000" />
+      <workItem from="1641401728369" duration="1365000" />
+      <workItem from="1641415022973" duration="839000" />
+      <workItem from="1641446909329" duration="10171000" />
+      <workItem from="1641548117041" duration="12373000" />
+      <workItem from="1641615499349" duration="16701000" />
+      <workItem from="1641699031505" duration="15456000" />
+      <workItem from="1641781574118" duration="23504000" />
+      <workItem from="1641885810316" duration="1677000" />
+      <workItem from="1641893552394" duration="76000" />
+      <workItem from="1641893782561" duration="49000" />
+      <workItem from="1641893923738" duration="253000" />
+      <workItem from="1641894310010" duration="7884000" />
+      <workItem from="1641951616554" duration="26467000" />
+      <workItem from="1642047185476" duration="8050000" />
+      <workItem from="1642143424318" duration="12378000" />
+      <workItem from="1642667711395" duration="11429000" />
+      <workItem from="1642765046989" duration="8726000" />
+      <workItem from="1642804769524" duration="31063000" />
+      <workItem from="1642913739026" duration="19987000" />
+      <workItem from="1643001143546" duration="8434000" />
+      <workItem from="1643096610722" duration="7976000" />
+      <workItem from="1643125089729" duration="2000" />
+      <workItem from="1643166299385" duration="7826000" />
+      <workItem from="1643195379383" duration="9694000" />
+      <workItem from="1643261445413" duration="3251000" />
+      <workItem from="1643443410853" duration="3624000" />
+      <workItem from="1643466655711" duration="54000" />
+      <workItem from="1643622779734" duration="1111000" />
+      <workItem from="1643877620396" duration="5738000" />
+      <workItem from="1643948725561" duration="18489000" />
+      <workItem from="1644037150258" duration="10747000" />
+      <workItem from="1644292246803" duration="839000" />
+      <workItem from="1645970211709" duration="54000" />
+      <workItem from="1658223238282" duration="52000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="222" y="99" key="SettingsEditor" timestamp="1658223282522">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="222" y="99" key="SettingsEditor/0.0.1440.912@0.0.1440.912" timestamp="1658223282522" />
+    <state x="383" y="193" width="672" height="678" key="search.everywhere.popup" timestamp="1658223286442">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="383" y="193" width="672" height="678" key="search.everywhere.popup/0.0.1440.912@0.0.1440.912" timestamp="1658223286442" />
+  </component>
+</project>

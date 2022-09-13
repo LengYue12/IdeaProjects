@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.UserMapper">
+
+    <insert id="register" parameterType="entity.Users">
+        insert into users (username,password,phone,createtime)
+        values
+        (#{username},#{password},#{phone},#{createtime})
+    </insert>
+
+
+
+    <select id="findAll" resultType="entity.Users">
+        select * from users
+    </select>
+
+
+    <select id="findByUid" resultType="entity.Users" parameterType="int">
+        select * from users where uid = #{uid}
+    </select>
+
+
+    <update id="update" parameterType="entity.Users">
+        UPDATE users SET username = #{username}, `password` = #{password},
+phone = #{phone},createtime = #{createtime} WHERE uid = #{uid}
+    </update>
+
+
+    <select id="findByUsername" parameterType="String" resultType="entity.Users">
+        select * from users where username like concat('%',#{username},'%')
+    </select>
+
+    <delete id="deleteBatch" parameterType="int">
+        delete from users
+        <where>
+            <foreach collection="array" open="uid in(" close=")" separator="," item="uid">
+                <!-- 通过占位符取到当前遍历元素的值 -->
+                #{uid}
+            </foreach>
+        </where>
+    </delete>
+</mapper>

@@ -1,0 +1,19 @@
+server:
+  port: 8888
+
+person:
+  id: 1000
+  name: 吴亦凡
+  hobby:
+    - 抽烟
+    - 强奸
+    - 大碗
+  family:
+    - 粉丝
+    - 宽面
+  map:
+    k1: 这是k1对应的value
+    k2: 这是k2对应的value
+  pet:
+    type: dog
+    name: 金毛

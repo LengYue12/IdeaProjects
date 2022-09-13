@@ -1,0 +1,4 @@
+controller\HelloAction.class
+service\HelloService.class
+stub\HelloServiceStub.class
+test\TestCheckException.class

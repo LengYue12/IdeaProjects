@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd
+">
+
+<!--要先引入context的命名空间和约束路径-->
+<!--    想要让IOC注解生效的话 就要     开启IOC注解扫描
+            扫描com.lagou 该包及其子包下所有的类上面所标注的注解。使注解生效
+-->
+<!--    <context:component-scan base-package="com.lagou"/>-->
+
+
+<!--    开启  AOP的自动代理            配置aop自动代理：   aop:aspectj-autoproxy
+            Spring会采用动态代理完成织入增强，并且生成代理      proxy-target-class="true"：表示强制使用cglib动态代理
+                会对标注了@Aspect  这个注解的类进行 织入，并生成对应的代理
+-->
+<!--    <aop:aspectj-autoproxy proxy-target-class="true"></aop:aspectj-autoproxy>-->
+
+
+</beans>

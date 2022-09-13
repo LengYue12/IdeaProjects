@@ -1,0 +1,33 @@
+server:
+  port: 9201
+spring:
+  application:
+    name: lagou-service-goods
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: 123456
+  cloud:
+    config: # 这是针对config分布式配置中心的配置，config server
+      name: application
+      profile: dev      # profile的值
+      label: master # 分支名称
+      uri: http://localhost:9400 # config server的地址
+  rabbitmq:
+    host: 192.168.200.141
+    port: 5672
+    username: lengyue
+    password: 123456
+
+
+
+
+eureka:
+  client:
+    service-url: # eureka server的路径
+      defaultZone:  http://LagouCloudEurekaServerA:9300/eureka,http://LagouCloudEurekaServerB:9301/eureka
+    registry-fetch-interval-seconds: 30 # 从Eureka Server 拉取服务列表的间隔时间
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:@project.version@

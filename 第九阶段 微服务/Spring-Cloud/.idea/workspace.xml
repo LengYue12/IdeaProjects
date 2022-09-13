@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8c116e8f-d3df-4127-918e-6682ac0069c5" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="test: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\software\repository" />
+        <option name="mavenHome" value="D:/software/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\software\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2DwRhV2CsQFLo9Klk5MgD7IIlAH" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/lagou-parent/laoug-service-common/src/main/java/com" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lagou-parent/lagou-cloud-gateway-9001/src/main/resources" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15136719" />
+    <property name="project.structure.side.proportion" value="0.25609756" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lagou.controllre" />
+      <recent name="com.lagou.Feign" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\idea\Spring-Cloud\lagou-parent\lagou-cloud-gateway-9001\src\main\resources" />
+      <recent name="D:\workspace\idea\Spring-Cloud\lagou-parent\lagou-cloud-gateway\src\main\resources" />
+      <recent name="D:\workspace\idea\Spring-Cloud\lagou-parent\lagou-cloud-eureka\src\main\resources" />
+      <recent name="D:\workspace\idea\Spring-Cloud\lagou-parent\lagou-service-order\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.EurekaApplication9301">
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lagou-cloud-config" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="lagou-cloud-eureka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication9301" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lagou-cloud-eureka-9301" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.EurekaApplication9301" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="lagou-cloud-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication9001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="lagou-cloud-gateway-9001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.GatewayApplication9001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoodsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="lagou-service-goods" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.GoodsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoodsApplication9201" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lagou-service-goods-9201" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.GoodsApplication9201" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="lagou-service-order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.OrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderApplication9101" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lagou-service-order-9101" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.OrderApplication9101" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.EurekaApplication9301" />
+      <item itemvalue="Spring Boot.GoodsApplication9201" />
+      <item itemvalue="Spring Boot.OrderApplication9101" />
+      <item itemvalue="Spring Boot.EurekaApplication" />
+      <item itemvalue="Spring Boot.GoodsApplication" />
+      <item itemvalue="Spring Boot.OrderApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication9001" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.OrderApplication" />
+        <item itemvalue="Spring Boot.GoodsApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication9001" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.EurekaApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c116e8f-d3df-4127-918e-6682ac0069c5" name="默认更改列表" comment="" />
+      <created>1661608279616</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661608279616</updated>
+      <workItem from="1661608280786" duration="4896000" />
+      <workItem from="1661661719122" duration="7769000" />
+      <workItem from="1661670500653" duration="17014000" />
+      <workItem from="1661743772452" duration="5174000" />
+      <workItem from="1661770084151" duration="8559000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="281" y="115" width="1159" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1661773623244">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="281" y="115" width="1159" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.912@0.0.1440.912" timestamp="1661773623244" />
+    <state x="526" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1661680607497">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="526" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.912@0.0.1440.912" timestamp="1661680607497" />
+    <state x="451" y="232" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1661670695964">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="451" y="232" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1440.912@0.0.1440.912" timestamp="1661670695964" />
+    <state x="529" y="382" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1661609948164">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="529" y="382" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.912@0.0.1440.912" timestamp="1661609948164" />
+    <state x="313" y="115" width="814" height="729" key="#意向" timestamp="1661670522753">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="313" y="115" width="814" height="729" key="#意向/0.0.1440.912@0.0.1440.912" timestamp="1661670522753" />
+    <state x="313" y="115" key="#项目结构" timestamp="1661685741237">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="313" y="115" key="#项目结构/0.0.1440.912@0.0.1440.912" timestamp="1661685741237" />
+    <state x="501" y="212" key="FileChooserDialogImpl" timestamp="1661609115376">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="501" y="212" key="FileChooserDialogImpl/0.0.1440.912@0.0.1440.912" timestamp="1661609115376" />
+    <state width="1397" height="339" key="GridCell.Tab.0.bottom" timestamp="1661780321491">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="339" key="GridCell.Tab.0.bottom/0.0.1440.912@0.0.1440.912" timestamp="1661780321491" />
+    <state width="1397" height="339" key="GridCell.Tab.0.center" timestamp="1661780321491">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="339" key="GridCell.Tab.0.center/0.0.1440.912@0.0.1440.912" timestamp="1661780321491" />
+    <state width="1397" height="339" key="GridCell.Tab.0.left" timestamp="1661780321491">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="339" key="GridCell.Tab.0.left/0.0.1440.912@0.0.1440.912" timestamp="1661780321491" />
+    <state width="1397" height="339" key="GridCell.Tab.0.right" timestamp="1661780321491">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="339" key="GridCell.Tab.0.right/0.0.1440.912@0.0.1440.912" timestamp="1661780321491" />
+    <state width="1397" height="339" key="GridCell.Tab.1.bottom" timestamp="1661780321491">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="339" key="GridCell.Tab.1.bottom/0.0.1440.912@0.0.1440.912" timestamp="1661780321491" />
+    <state width="1397" height="339" key="GridCell.Tab.1.center" timestamp="1661780321491">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="339" key="GridCell.Tab.1.center/0.0.1440.912@0.0.1440.912" timestamp="1661780321491" />
+    <state width="1397" height="339" key="GridCell.Tab.1.left" timestamp="1661780321491">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="339" key="GridCell.Tab.1.left/0.0.1440.912@0.0.1440.912" timestamp="1661780321491" />
+    <state width="1397" height="339" key="GridCell.Tab.1.right" timestamp="1661780321491">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="339" key="GridCell.Tab.1.right/0.0.1440.912@0.0.1440.912" timestamp="1661780321491" />
+    <state width="218" height="477" key="HiddenNamespacesPopup" timestamp="1661608776475">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="218" height="477" key="HiddenNamespacesPopup/0.0.1440.912@0.0.1440.912" timestamp="1661608776475" />
+    <state x="201" y="31" key="SettingsEditor" timestamp="1661670538504">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="201" y="31" key="SettingsEditor/0.0.1440.912@0.0.1440.912" timestamp="1661670538504" />
+    <state x="519" y="234" key="chooseDestDirectoryDialog" timestamp="1661776367200">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="519" y="234" key="chooseDestDirectoryDialog/0.0.1440.912@0.0.1440.912" timestamp="1661776367200" />
+    <state x="93" y="93" width="1255" height="727" key="dock-window-1" timestamp="1661667016054">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="93" y="93" width="1255" height="727" key="dock-window-1/0.0.1440.912@0.0.1440.912" timestamp="1661667016054" />
+    <state x="216" y="104" width="1224" height="588" key="new project wizard" timestamp="1661686444793">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="216" y="104" width="1224" height="588" key="new project wizard/0.0.1440.912@0.0.1440.912" timestamp="1661686444793" />
+  </component>
+</project>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--命名空间的值与接口的全路径保持一致-->
+<mapper namespace="com.lagou.dao.TestMapper">
+
+<!--    对test进行查询所有操作-->
+    <select id="findAllTest" resultType="test">
+        select * from test
+    </select>
+
+</mapper>

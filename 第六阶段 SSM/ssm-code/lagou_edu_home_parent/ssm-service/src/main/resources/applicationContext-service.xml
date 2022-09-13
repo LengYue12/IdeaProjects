@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+       	http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+       	http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop.xsd
+">
+
+    <!--    配置文件模块化：
+                把spring的核心配置文件进行拆分，这个是service层的-->
+
+
+<!--    进行service的相关配置:IOC-->
+<!--开启IOC注解扫描，只扫描service层-->
+    <context:component-scan base-package="com.lagou.service"/>
+
+
+<!--   加载applicationContext-service.xml 时  也加载dao层的 applicationContext-dao.xml 核心配置文件-->
+<import resource="classpath:applicationContext-dao.xml"/>
+
+
+</beans>

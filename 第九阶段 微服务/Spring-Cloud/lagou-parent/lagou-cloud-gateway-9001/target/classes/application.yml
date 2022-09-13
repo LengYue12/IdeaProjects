@@ -1,0 +1,28 @@
+server:
+  port: 9001
+eureka:
+  client:
+    serviceUrl: # eureka server的路径
+      defaultZone: http://LagouCloudEurekaServerA:9300/eureka,http://LagouCloudEurekaServerB:9301/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:1.0-SNAPSHOT
+spring:
+  application:
+    name: lagou-cloud-gateway
+    # 网关的配置
+  cloud:
+    gateway:
+    # 配置路由
+      routes:
+        - id: service-goods-router
+          # 动态路由，从注册中心获取对应服务的实例
+          uri: lb://lagou-service-goods
+          predicates:
+            - Path=/goods/**
+        - id: service-order-router
+          uri: lb://lagou-service-order
+          predicates:
+            - Path=/order/**
+          filters:
+            - StripPrefix=1 # 在过滤器中去掉uri中的第一部分，所以就要求我们通过网关访问时，把uri的第一部分设置为product，从uri的第二部分开始才是真正的uri

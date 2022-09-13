@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8ffcd5d5-1285-499e-8ba9-59e5c3aeef9e" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\software\repository" />
+        <option name="mavenHome" value="D:/software/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\software\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2CWjlWGUVt6BaO3hCfVbwMdNKMJ" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\idea\spring-rabbitmq-consumer\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TestConsumerRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestConsumerRunner" />
+      <module name="spring-rabbitmq-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestConsumerRunner" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ffcd5d5-1285-499e-8ba9-59e5c3aeef9e" name="默认更改列表" comment="" />
+      <created>1658925385691</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658925385691</updated>
+      <workItem from="1658925388863" duration="1459000" />
+      <workItem from="1658929146415" duration="853000" />
+      <workItem from="1659006190383" duration="1180000" />
+      <workItem from="1659013226100" duration="799000" />
+      <workItem from="1659086693253" duration="1908000" />
+      <workItem from="1659095459642" duration="2142000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="526" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1658929389897">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="526" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.912@0.0.1440.912" timestamp="1658929389897" />
+    <state width="1397" height="269" key="GridCell.Tab.0.bottom" timestamp="1659103731097">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="269" key="GridCell.Tab.0.bottom/0.0.1440.912@0.0.1440.912" timestamp="1659103731097" />
+    <state width="1397" height="269" key="GridCell.Tab.0.center" timestamp="1659103731097">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="269" key="GridCell.Tab.0.center/0.0.1440.912@0.0.1440.912" timestamp="1659103731097" />
+    <state width="1397" height="269" key="GridCell.Tab.0.left" timestamp="1659103731097">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="269" key="GridCell.Tab.0.left/0.0.1440.912@0.0.1440.912" timestamp="1659103731097" />
+    <state width="1397" height="269" key="GridCell.Tab.0.right" timestamp="1659103731097">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="269" key="GridCell.Tab.0.right/0.0.1440.912@0.0.1440.912" timestamp="1659103731097" />
+  </component>
+</project>

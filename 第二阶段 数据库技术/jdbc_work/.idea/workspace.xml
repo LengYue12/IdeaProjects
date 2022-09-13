@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="41271cd5-585d-4ff7-aaed-9726a0a31753" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="25mRtU7lFApoMNF2nQtFy9sFg0H" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zs\IdeaProjects\jdbc_work\xml_task03\src\com\lagou\xml02\dtd" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lagou.demo01.utils" />
+      <recent name="com.lagou.demo01.entity" />
+      <recent name="com.lagou.demo01.app" />
+      <recent name="com.lagou.demo01.app.entity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zs\IdeaProjects\jdbc_work\jdbc_task04\resources" />
+      <recent name="C:\Users\zs\IdeaProjects\jdbc_work\jdbc_task04\src\com\lagou\utils" />
+      <recent name="C:\Users\zs\IdeaProjects\jdbc_work\jdbc_task04\resource" />
+      <recent name="C:\Users\zs\IdeaProjects\jdbc_work\jdbc_task02\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestOrdersDao.testFindOrderById">
+    <configuration name="TestOrdersDao.testFindAllOrders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc_task04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagou.app" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.app.TestOrdersDao" />
+      <option name="METHOD_NAME" value="testFindAllOrders" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestOrdersDao.testFindOrderById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc_task04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagou.app" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.app.TestOrdersDao" />
+      <option name="METHOD_NAME" value="testFindOrderById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestProductDao.testFindProductByCid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc_task04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagou.app" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.app.TestProductDao" />
+      <option name="METHOD_NAME" value="testFindProductByCid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestProductDao.testFindProductById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc_task04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagou.app" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.app.TestProductDao" />
+      <option name="METHOD_NAME" value="testFindProductById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestProductDao.testgetCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc_task04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagou.app" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.app.TestProductDao" />
+      <option name="METHOD_NAME" value="testgetCount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestOrdersDao.testFindOrderById" />
+        <item itemvalue="JUnit.TestOrdersDao.testFindAllOrders" />
+        <item itemvalue="JUnit.TestProductDao.testFindProductByCid" />
+        <item itemvalue="JUnit.TestProductDao.testgetCount" />
+        <item itemvalue="JUnit.TestProductDao.testFindProductById" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41271cd5-585d-4ff7-aaed-9726a0a31753" name="Default Changelist" comment="" />
+      <created>1646130489582</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646130489582</updated>
+      <workItem from="1646130492066" duration="9327000" />
+      <workItem from="1646140079508" duration="3353000" />
+      <workItem from="1646200218169" duration="5021000" />
+      <workItem from="1646209487988" duration="10756000" />
+      <workItem from="1646274713034" duration="755000" />
+      <workItem from="1646275724022" duration="147000" />
+      <workItem from="1646280181913" duration="120000" />
+      <workItem from="1646280309040" duration="4419000" />
+      <workItem from="1646286409879" duration="13210000" />
+      <workItem from="1646390536256" duration="56000" />
+      <workItem from="1646390596395" duration="5716000" />
+      <workItem from="1646402543225" duration="1235000" />
+      <workItem from="1646457411839" duration="15171000" />
+      <workItem from="1646553005013" duration="230000" />
+      <workItem from="1646553398872" duration="6883000" />
+      <workItem from="1646637425729" duration="14366000" />
+      <workItem from="1646663760106" duration="2344000" />
+      <workItem from="1646711139493" duration="2136000" />
+      <workItem from="1646717582305" duration="8971000" />
+      <workItem from="1646818771189" duration="42000" />
+      <workItem from="1648873091702" duration="20000" />
+      <workItem from="1649590873538" duration="159000" />
+      <workItem from="1649602272720" duration="6000" />
+      <workItem from="1649602285937" duration="1000" />
+      <workItem from="1649602288862" duration="1000" />
+      <workItem from="1649747850871" duration="7000" />
+      <workItem from="1650556166927" duration="64000" />
+      <workItem from="1650556339962" duration="133000" />
+      <workItem from="1651582924928" duration="22000" />
+      <workItem from="1651659578095" duration="8000" />
+      <workItem from="1651659608321" duration="9000" />
+      <workItem from="1651687068236" duration="7000" />
+      <workItem from="1651732259490" duration="27000" />
+      <workItem from="1651740556238" duration="111000" />
+      <workItem from="1651745366511" duration="30000" />
+      <workItem from="1651745859332" duration="533000" />
+      <workItem from="1651746425059" duration="67000" />
+      <workItem from="1651746593549" duration="40000" />
+      <workItem from="1651831037755" duration="986000" />
+      <workItem from="1651832052463" duration="6000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="511" y="248" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1651831075760">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="511" y="248" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1536.824@0.0.1536.824" timestamp="1651831075760" />
+    <state x="270" y="54" key="SettingsEditor" timestamp="1651831673055">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1651831673055" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1651832055831">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1651832055831" />
+  </component>
+</project>

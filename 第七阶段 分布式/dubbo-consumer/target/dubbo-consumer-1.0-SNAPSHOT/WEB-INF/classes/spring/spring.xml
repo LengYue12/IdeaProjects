@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+">
+
+<!--    1.服务提供方在Zookeeper中的别名-->
+    <dubbo:application name="dubbo-consumer"/>
+
+<!--    2.注册中心的地址-->
+<dubbo:registry address="zookeeper://192.168.114.128:2181"/>
+<!--    3.扫描类（将什么包下的类作为服务提供类）-->
+    <dubbo:annotation package="controller"/>
+    <!--    让监控 去注册中心  自动找服务-->
+    <dubbo:monitor protocol="registry"/>
+<!--   <dubbo:consumer check="false"/>-->
+
+
+<!--     使用reference 连接远程           指定版本-->
+    <dubbo:reference interface="service.HelloService" id="helloService" version="2.0.0" stub="stub.HelloServiceStub">
+        <dubbo:method name="sayHello" retries="3"/>
+        <dubbo:method name="sayNo" retries="0"/>    <!--不重试-->
+    </dubbo:reference>
+</beans>

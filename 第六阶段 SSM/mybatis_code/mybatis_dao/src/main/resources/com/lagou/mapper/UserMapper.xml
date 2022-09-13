@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lagou.mapper.UserMapper">
+
+<!--    根据id查询用户-->
+    <select id="findUserById" parameterType="int" resultMap="userResultMap">
+        select * from user where id = #{id}
+    </select>
+
+<!--    id:属于标签的唯一标识
+        type: 封装后的实体类型-->
+    <resultMap id="userResultMap" type="com.lagou.domain.User">
+<!--        手动配置映射关系，这个映射关系是可以给多个配置进行引用-->
+<!--        id：用来配置主键-->
+<!--        property：实体中的属性名  column：数据库表的主键字段名-->
+        <id property="id" column="id"></id>
+<!--        result:对表中普通字段的封装-->
+        <result property="username" column="username"></result>
+        <result property="birthday" column="birthday"></result>
+        <result property="sex" column="sex"></result>
+        <result property="address" column="address"></result>
+    </resultMap>
+
+<!--    查询所有用户-->
+<!--    resultMap：手动配置实体属性与表中字段的映射关系，来完成手动封装-->
+<!--    表示当前这条sql语句的查询结果要按照id为userResultMap的resultMap这个映射关系来进行封装-->
+    <select id="findAllResultMap" resultMap="userResultMap">
+        select * from user
+    </select>
+
+<!--    多条件查询方式一-->
+<!--    #{arg0}表示第一个占位符要引用的是mapper接口方法中第一个形参的值
+        #{arg1}表示引用第二个形参的值-->
+    <!--    #{param1}表示第一个占位符要引用的是mapper接口方法中第一个形参的值
+        #{param2}表示引用第二个形参的值-->
+
+    <select id="findByIdAndUsername1" resultMap="userResultMap">
+        <!--   select * from user where id = #{arg0} and username = #{arg1} -->
+        select * from user where id = #{param1} and username = #{param2}
+    </select>
+
+
+<!--    多条件查询方式二-->
+    <!--    #{id}里面的内容就和mapper接口方法中的@Param这个注解里面写的value值保持一致
+        就可以根据这个注解里面的标识来获取到指定参数的值-->
+    <select id="findByIdAndUsername2" resultMap="userResultMap">
+        select * from user where id = #{id} and username = #{username}
+    </select>
+
+<!--    多条件查询方式三-->
+<!--    sql里的#{}占位符的值要和parameterType当前实体中get方法后面的首字母小写保持一致-->
+    <select id="findByIdAndUsername3" resultMap="userResultMap" parameterType="user">
+        select * from user where id = #{id} and username = #{username}
+    </select>
+
+
+<!--    模糊查询：方式一-->
+<!--    id要和mapper接口中对应的方法名保持一致-->
+<!--    由于是模糊查询，返回结果类型是List集合，泛型是user实体类型
+        表明模糊查询的结果会有多条记录，每一条记录都要封装成一个user实体
+        由于user实体与表中字段不一致，所以要采用resultMap。属性值为配置好的映射配置，id为userResultMap-->
+
+<!--    如果parameterType，传入参数是一个实体类型的话，#{}里面的值是要写当前实体里面的属性名，或当前实体里面get方法后面的首字母小写
+        但如果传入参数parameterType为基本数据类型或者是String，且传入的个数只有一个参数的情况下。那么#{}里面的值可以随便写-->
+
+
+<!--    parameterType是基本类型或者String时，且参数个数只有一个时。那么#{}里面的值是随便写的
+            #{}：在mybatis中是占位符，引用参数值的时候，会自动添加''单引号-->
+    <select id="findByUsername" resultMap="userResultMap" parameterType="string">
+        select * from user where username like #{username}
+    </select>
+
+
+<!--    模糊查询：方式二-->
+<!--    parameterType是基本类型或者String时，且参数个数只有一个时。那么${}里面的值只能写value，不能随便写
+            ${}:是sql原样拼接，也就是在传递参数的时候，传递的是什么，就原样转换，是不会自动添加''单引号的
+-->
+    <select id="findByUsername2" resultMap="userResultMap" parameterType="string">
+        select * from user where username like '${value}'
+    </select>
+
+
+
+<!--    添加用户：获取返回主键：方式一-->
+<!--    若parameterType传递的参数类型为实体类型，#{}里面写的就是该实体里面get方法后面的首字母小写-->
+
+<!--
+        useGeneratedKeys:其实就是声明返回主键
+            值为true时，sql添加成功后的记录所对应的主键值要返回
+        keyProperty：把返回主键的值，封装到实体中哪个属性上。
+            当前写的是id，就表示把返回主键的值封装到user实体中的id属性中
+
+
+        注：只适用于主键自增的数据库，mysql和sqlserver支持，Oracle不支持
+ -->
+    <insert id="saveUser" parameterType="user" useGeneratedKeys="true" keyProperty="id">
+        insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+
+<!--    添加用户：获取返回主键：方式二-->
+
+    <insert id="saveUser2" parameterType="user">
+<!--
+        selectKey：适用范围更广，支持所有类型的数据库
+            order="AFTER"：表示设置在sql语句执行前（后），执行此语句
+            keyColumn="id":表示指定主键对应的列名，就是主键所对应的字段
+            keyProperty="id":把返回主键的值，封装到实体中哪个属性上.写id就会把返回主键的值封装user实体中id属性上
+            resultType="int":指定主键类型
+ -->
+        <selectKey order="AFTER" keyColumn="id" keyProperty="id" resultType="int">
+            SELECT LAST_INSERT_ID();
+        </selectKey>
+        insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+
+
+<!--    动态sql之if：多条件查询-->
+<!--    id和mapper接口的方法名保持一致-->
+<!--    #{}里面的值就是传递过来的实体中的属性名-->
+    <select id="findByIdAndUsernameIf" parameterType="user" resultType="user">
+        select * from user
+        <!-- test 里面写的就是表达式
+            id != null  id就是传递过来的实体对象里面的属性名
+             <where>标签：相当于where 1=1，但是如果没有条件的话，不会拼接上where关键字
+             如果where标签里面有条件需要拼接，就会在sql语句中自动添加where
+             如果没有条件需要拼接，就不会添加where
+            -->
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="username != null">
+                and username = #{username}
+            </if>
+        </where>
+    </select>
+
+
+<!--    动态sql之set：动态更新-->
+    <update id="updateIf" parameterType="user">
+        update user
+        <!-- <set>：在更新的时候，会自动添加set关键字,还会去掉最后一个条件的逗号 -->
+        <set>
+            <if test="username != null">
+                username = #{username},
+            </if>
+            <if test="birthday != null">
+                birthday = #{birthday},
+            </if>
+            <if test="sex != null">
+                sex = #{sex},
+            </if>
+            <if test="address != null">
+                address = #{address},
+            </if>
+
+        </set>
+            where id = #{id}
+    </update>
+
+
+<!--    抽取的sql片段-->
+    <sql id="selectUser">
+<!-- 抽取出的重复的sql语句 -->
+        select * from user
+    </sql>
+
+
+<!--    动态sql的foreach标签：多值查询：根据多个id值查询记录-->
+    <select id="findByList" parameterType="list" resultType="user">
+<!-- 使用foreach标签去遍历传递过来的list集合，动态取出里面的值，完成sql的动态拼接 -->
+<!-- include标签来进行引用sql片段
+     refid表示当前要去引用的id标识为selectUser所对应的sql语句-->
+        <include refid="selectUser"/>
+        <where>
+        <!--
+        foreach:就是对传递过来的list集合进行遍历,同时进行sql的动态拼接。item就是当前正在遍历中的每个元素
+            collection:代表要遍历的集合元素，只要传递过来的集合的泛型是基本数据类型或String的话
+            通常写collection或者list
+            open:代表语句的开始部分
+            close:代表语句的结束部分
+            item:代表遍历集合中的每个元素，所生成的变量名
+            separator:分隔符
+        -->
+            <foreach collection="list" open="id in (" close=")" item="id" separator=",">
+                #{id}
+            </foreach>
+        </where>
+    </select>
+
+
+
+    <!--    动态sql的foreach标签：多值查询：根据多个id值查询记录-->
+    <select id="findByArray" parameterType="int" resultType="user">
+        <!-- 使用foreach标签去遍历传递过来的array数组，动态取出里面的值，完成sql的动态拼接 -->
+        <!-- 引入sql片段 -->
+        <include refid="selectUser"/>
+        <where>
+            <!--
+            foreach:就是对传递过来的array数组进行遍历,同时进行sql的动态拼接。item就是当前正在遍历中的每个元素
+                collection:代表要遍历数组元素，写array就ok
+                open:代表语句的开始部分
+                close:代表语句的结束部分
+                item:代表遍历数组中的每个元素，所生成的变量名
+                separator:分隔符
+            -->
+            <foreach collection="array" open="id in (" close=")" item="id" separator=",">
+                #{id}
+            </foreach>
+        </where>
+    </select>
+</mapper>

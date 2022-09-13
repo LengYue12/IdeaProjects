@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+">
+
+<!--    *** 只有配置注解扫描，注解才能生效
+                base-package="com.lagou"：就会对com.lagou 这个包及其子包里面的所有类都进行注解扫描
+                    让这个包及其子包中所有类中所配置的注解都能够生效
+            -->
+    <context:component-scan base-package="com.lagou"></context:component-scan>
+
+
+
+
+
+
+
+
+
+
+
+<!--    新知识点：   Spring容器加载properties文件，要用到  context:property-placeholder  标签
+            location：就是 properties 文件所对应的路径
+                当加载好了properties文件后， 如果想引用到properties 文件里的内容，用到 Spring的el表达式: ${key}   获得到对应的value
+
+
+
+            在 Spring的核心配置文件 applicationContext.xml 中如何去加载一个 jdbc.properties？
+
+                主要就是借助 context:property-placeholder  这个标签
+-->
+
+
+
+
+<!--    小技巧：
+            只要在Spring的核心配置文件 applicationContext.xml中 想要去引入外部其他的配置文件时
+                不管是import标签还是 context:property-placeholder 标签。只要是想要引入外部的一些配置文件时
+                    在写位置时，前面都要加 classpath:
+                        就是当前在找文件时，会去定位到当前项目编译过后的classes目录下去进行查找
+                            所以要添加  classpath:
+        -->
+
+
+<!--  表示在 加载 applicationContext.xml 配置文件的同时
+        借助 context:property-placeholder  标签来把jdbc.properties文件 也引入加载了
+
+                这样就可以在编写 数据源 配置信息 时 编写value值时 直接去引用在jdbc.properties文件  配好的一些数据库的相关信息了
+  -->
+    <context:property-placeholder location="classpath:jdbc.properties"></context:property-placeholder>
+
+
+
+<!--    若想在加载applicationContext.xml 的同时把 jdbc.properties文件也加载的话
+            首先就需要引入 Context命名空间和约束路径-->
+
+
+
+
+<!--    Spring帮助我们创建对象就写    bean标签
+
+            若有依赖关系需要注入
+                有参构造注入：constructor-arg 子标签
+                set方式注入：property 子标签
+-->
+
+
+
+<!--    dataSource 数据库连接池对象，dataSource 的创建权要交由Spring容器去完成，所以对于dataSource创建 bean标签
+
+          当创建出dataSource 实例对象后，在创建QueryRunner 实例对象时，再把dataSource 通过通过有参构造方式注入到QueryRunner 实例对象中
+
+                先让spring把dataSource数据源对象创建出来，存到容器中
+                     再创建QueryRunner 的时候，把dataSource通过有参构造方式进行注入
+-->
+
+<!--    采用阿里德鲁伊的数据库连接池-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+<!--       使用property对 driverClassName进行配置，说明在DruidDataSource对象中 有对应的关于driverClassName 这个属性的set方法
+                所以现在使用set方式 进行依赖注入，注入的值就是字符串类型的   驱动类
+ -->
+<!--        使用抽取的properties文件来配置数据源 信息
+                写value值时  要引用到 在jdbc.properties配置好的值
+                    ${}：里面写jdbc.properties  里面配置的 key值，这样就可以根据key值 获取到 对应的value值
+-->
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+
+
+
+<!--    QueryRunner的创建权交由 Spring容器去完成，因为在AccountDao中是需要注入 QueryRunner 对象的。所以要配置 QueryRunner 的bean标签
+              在创建QueryRunner的同时，要去使用构造方法注入 已经在IOC容器中的 dataSource 实例对象
+
+
+
+    当创建出QueryRunner 实例对象后，在创建AccountDaoImpl 实例对象时，再把QueryRunner 通过set方式注入到AccountDaoImpl 实例对象中
+
+        QueryRunner对象在创建时，需要注入dataSource
+
+            配置QueryRunner的bean标签，先把QueryRunner 实例对象创建出来存到容器中
+                这样在创建AccountDaoImpl实例对象 时，才能完成对QueryRunner 实例对象的注入
+-->
+    <bean id="qr" class="org.apache.commons.dbutils.QueryRunner">
+<!--        在创建QueryRunner 实例对象时，要通过它的有参构造把dataSource注入进来
+                所以使用constructor-arg 标签，name属性值要和QueryRunner 里的有参构造里的参数名保持一致
+                    ref属性要配置引用数据类型，引用dataSource 数据源对象
+-->
+        <constructor-arg name="ds" ref="dataSource"/>
+    </bean>
+
+
+
+
+<!--    AccountDao
+    当创建出AccountDaoImpl 实例对象后，在创建AccountServiceImpl 实例对象时，再把AccountDaoImpl 通过set方式注入到AccountServiceImpl 实例对象中
+
+        在AccountDao对象中，需要注入QueryRunner
+
+            在配置AccountDao bean标签时，还需要在其内部配置子标签 property
+                借助property标签，来完成依赖注入。因为在AccountDaoImpl里还有QueryRunner 实例对象
+-->
+
+<!--    class：AccountDaoImpl的全路径-->
+    <bean id="accountDao" class="com.lagou.dao.imp.AccountDaoImpl">
+<!--        通过set方式去注入QueryRunner 实例对象
+                name：就是AccountDaoImpl 类中  set方法后面的首字母小写
+                ref:注入QueryRunner 对象
+    -->
+        <property name="qr" ref="qr"/>
+    </bean>
+
+
+<!--    AccountDao2-->
+    <bean id="accountDao2" class="com.lagou.dao.imp.AccountDaoImpl2">
+    </bean>
+
+
+
+
+<!--    AccountService
+
+            在AccountService对象中，需要注入accountDao
+-->
+
+<!--    <bean id="accountService" class="com.lagou.service.impl.AccountServiceImpl">-->
+<!--&lt;!&ndash;        在AccountServiceImpl 实例对象中 要注入accountDao 实例对象-->
+<!--                所以要通过set方式注入accountDao 实例对象-->
+<!--&ndash;&gt;-->
+<!--        <property name="accountDao" ref="accountDao"/>-->
+<!--    </bean>-->
+
+
+
+<!--    使用注解方式生成AccountServiceImpl 实例对象存到IOC容器中，并且基于注解实现依赖注入-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</beans>

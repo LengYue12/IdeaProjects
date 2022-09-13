@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!--
+
+    IOC的重点就是bean标签配置，bean标签就是创建对象并放到spring的IOC容器中
+        id属性是唯一标识，不允许重复
+        class属性：要实例化的Bean的全路径
+        scope属性：Bean的作用范围   singleton（默认）单例对象   和prototype：当前创建的对象是多例的
+
+
+
+
+    DI 依赖注入用到的标签
+        constructor-arg标签：采用有参构造进行依赖注入的标签
+            name属性：对应的属性名，有参构造中的参数名称
+            value属性：注入普通属性值时用到的
+            ref属性：注入的对象引用值时用到的
+
+
+
+        property标签：使用set方式进行属性注入时会用到的标签
+            name属性：属性名称
+            value：注入普通属性值
+            ref：注入对象引用值
+
+            注入集合类型时的标签
+            <list>
+            <set>
+            <array>
+            <map>
+            <props>
+            子标签
+
+
+
+
+       import标签：导入其他的Spring的分文件的
+
+
+
+
+
+
+
+
+
+
+    在spring核心配置文件中 配置UserDaoImpl
+        id：唯一标识，不能重复
+        class：实现类的全路径
+
+        spring底层就是通过反射根据类全路径生成的实例对象，存到IOC容器中
+
+        scope="singleton"：默认值：创建出来的bean是单例的
+                prototype：创建出来的bean是多例的，每次从容器中获取都会创建一个新的对象
+-->
+<!--    默认走无参构造方法去生成实例对象并存到容器中-->
+<!--    方式一：无参构造方法进行实例化-->
+    <bean id="userDao" class="com.lagou.dao.impl.UserDaoImpl">
+
+<!--        完成依赖注入，向UserDaoImpl 该对象中注入username 和 age 这两个普通属性的值-->
+
+<!--
+            采用set方式完成普通属性值的注入
+
+ name：要和当前类中的 set方法后面的首字母小写 保持一致
+                ref：用于引用数据类型的注入
+                value：用户普通数据类型的注入
+
+            所以要根据当前注入的类型来选择使用value还是ref
+
+              要注入的username是String类型，所以是普通数据类型，可以用value
+
+              -->
+        <property name="username" value="张飞"></property>
+        <property name="age" value="30"></property>
+
+
+
+
+
+
+<!--    进行list集合数据类型的注入
+
+            name="list"：配置UserDaoImpl这个类 里面的list属性
+   -->
+        <property name="list">
+<!--            在property标签中 用到list子标签，表示要注入list集合-->
+            <list>
+                <value>jjj</value>
+<!--                把list集合中第二个元素的值设置为user对象
+                        使用ref标签，用于引用数据类型的注入，user就是引用数据类型
+                            bean="user"：bean属性指定当前要去注入的对象的标识
+-->
+                <ref bean="user"></ref>
+            </list>
+        </property>
+
+
+
+
+<!--    进行set集合数据类型的注入    -->
+
+        <property name="set">
+            <!--            在property标签中 用到set子标签，表示要注入set集合-->
+            <set>
+<!--                注入普通数据类型-->
+                <value>lkkk</value>
+                <!--                把list集合中第二个元素的值设置为user对象
+                                        使用ref标签，用于引用数据类型的注入，user就是引用数据类型
+                                            bean="user"：bean属性指定当前要去注入的对象的标识
+                -->
+                <ref bean="user"></ref>
+            </set>
+        </property>
+
+
+<!--    进行array数组数据类型的注入    -->
+        <property name="array">
+            <array>
+                <value>3gggg</value>
+                <ref bean="user"></ref>
+            </array>
+        </property>
+
+
+<!--     进行map集合数据类型的注入   -->
+        <property name="map">
+            <map>
+<!--              map集合中  第一个元素 key为k1，value为lll-->
+                <entry key="k1" value="lll"></entry>
+<!--                map集合中 第二个元素 key为k2， value为user引用-->
+                <entry key="k2" value-ref="user"></entry>
+            </map>
+        </property>
+
+
+<!--    进行properties数据类型的注入    -->
+    <property name="properties">
+        <props>
+            <prop key="k1">v1</prop>
+            <prop key="k2">v2</prop>
+            <prop key="k3">v3</prop>
+        </props>
+    </property>
+
+
+
+    </bean>
+
+
+
+<!--  配置User对象  -->
+    <bean id="user" class="com.lagou.domain.User">
+<!--        user类中有两个普通属性，并且有set方法，所以可以使用set方式进行 值的注入-->
+        <property name="username" value="关羽"/>
+        <property name="age" value="35"/>
+    </bean>
+
+
+
+
+
+
+
+
+
+
+
+<!--    <bean id="userDao2" class="com.lagou.dao.impl.UserDaoImpl2"/>-->
+
+<!--方式二：工厂静态方法实例化-->
+<!--    factory-method属性：就会把 StaticFactoryBean 里面的createUserDao 这个方法进行调用，获取到返回结果。结合id 放到IOC
+
+        factory-method属性：用来指定把该方法的返回值存到容器中
+    -->
+<!--    <bean id="userDao" class="com.lagou.factory.StaticFactoryBean" factory-method="createUserDao"/>-->
+
+
+<!--    方式三：工厂普通方法实例化
+        先生成工厂类实例存到容器中
+
+            factory-bean：指定当前工厂bean对象是哪个
+            factory-method：表示要去调用这个工厂类里面的哪个方法  把对应方法的返回值存到容器中
+-->
+<!--    <bean id="dynamicFactoryBean" class="com.lagou.factory.DynamicFactoryBean"/>-->
+<!--    <bean id="userDao" factory-bean="dynamicFactoryBean" factory-method="createUserDao"/>-->
+
+
+
+
+<!--    配置UserService-->
+
+<!--    这段bean标签的配置，所采用的对象的创建   其实就是采用有参构造的方法进行对象的创建，
+            同时借助constructor-arg 这个标签，设置了要去注入的参数的值
+
+            在new  UserServiceImpl对象时，是去注入了一个userDao对象
+            IUserService userService = new UserServiceImpl(userDao);
+
+-->
+<!--在bean标签里添加 p:userDao-ref="userDao"   P命名空间注入
+            ref ：是实例对象的id-->
+
+
+<!--    使用有参完成依赖注入-->
+
+<!--    采用有参构造来创建userServiceImpl 对象-->
+    <bean id="userService" class="com.lagou.service.impl.UserServiceImpl" p:userDao-ref="userDao">
+<!--        constructor-arg 子标签：spring在进行解析配置文件时，看到了这个constructor-arg 子标签。
+                就会生成userService 这个实例对象时，要采用有参构造方法来进行创建实例对象
+-->
+
+<!--        index="0"：表示要给userServiceImpl 这个类中的有参构造中的第一个参数进行赋值
+                type="com.lagou.dao.IUserDao"：来指定当前第一个参数的实际类型
+                ref="userDao"：表示引用。要去引用IOC容器中的哪个对象，并把它注入到第一个参数中。要和配置的注入对象 的id值相同
+
+                这样就可以根据标识在容器中找到对应的userDao实例对象，并把它注入给当前userServiceImpl 里面的有参构造中的第一个参数
+-->
+<!--        <constructor-arg index="0" type="com.lagou.dao.IUserDao" ref="userDao"/>-->
+
+        <!--   name="userDao"：name的值就是 userServiceImpl 类中的 有参构造的 参数名
+                    表示就要给有参构造中 参数名为userDao 的参数进行值的注入，注入的值就是 userDao这个实例对象
+
+                    ref="userDao"：就和userDao这个实例对象 的id值保持一致
+          -->
+<!--        <constructor-arg name="userDao" ref="userDao"/>-->
+
+
+
+<!--    采用set方法完成依赖注入           常用
+            name="userDao"：name的值要写 userServiceImpl这个类 中所生成的set方法后面的首字母小写
+            ref="userDao"：配置引用对象。 根据这个标识，在容器中找到对应的实例对象，然后注入给 userServiceImpl这个类 中的userDao属性
+
+            等同于
+                userService.setUserDao(userDao);
+-->
+<!--    <property name="userDao" ref="userDao"/>-->
+
+
+    </bean>
+
+
+<!--    借助import标签      来配置文件模块化
+        主从配置文件加载
+        resource="classpath:"：子配置文件的路径
+-->
+    <import resource="classpath:applicationContext-user.xml"></import>
+
+
+
+
+</beans>
+

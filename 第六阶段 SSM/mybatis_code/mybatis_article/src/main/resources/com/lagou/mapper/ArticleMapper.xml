@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lagou.mapper.ArticleMapper">
+
+
+<!--    一对多嵌套查询：查询文章信息及关联的评论信息，并实现延迟加载效果
+
+        一对多配置：
+            使用<resultMap>和<collection>标签做配置，通过column条件来执行select查询
+                select 属性是定位到哪条要执行的sql的
+    -->
+
+    <!--    手动编写映射关系      resultMap标签
+            sql语句查询出的结果，要把普通字段封装到article实体中的属性上
+            把关于comment的一些信息是要封装到article对象里面的list集合里面的每个comment上
+            所以要配置字段和属性的映射关系-->
+    <resultMap id="ArticleMap" type="article">
+<!--        设置article表的主键和实体类属性的映射关系-->
+        <id property="id" column="id"/>
+        <!--        result标签：对于普通属性的映射配置-->
+        <result property="title" column="title"/>
+        <result property="content" column="content"/>
+
+
+        <!--    如何去封装article实体里面的commentList
+                也就是第一条sql执行完毕后，要配置id查询出每个文章所对应的评论信息并封装到article实体里面的commentList 集合中-->
+
+        <!--        所以要用的collection 标签，property 对应属性名
+                    ofType：集合中泛型的全路径
+                    column：表示要传递的参数，是当前sql查询出来的哪个字段值
+                    select：表示要去调用的sql，定位到哪条sql语句进行执行。   值写Statementid     namespace.id
+                    namespace:接口全路径     id值：和mapper接口的方法名相同-->
+
+        <!--        实现延迟加载效果-->
+
+        <!--        fetchType="lazy": 就是延迟加载策略
+                    fetchType="eager": 立即加载策略
+
+                    由于在Mybatis核心配置文件中配置了全局延迟加载，所以局部延迟加载就不用配置了
+            -->
+
+        <collection property="commentList" ofType="Comment" column="id"
+                    select="com.lagou.mapper.CommentMapper.findById"/>
+
+    </resultMap>
+
+    <select id="findAll" resultMap="ArticleMap">
+<!-- 先查询出文章表信息 -->
+        select * from t_article
+    </select>
+</mapper>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+       	http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+       	http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop.xsd
+">
+
+<!--    配置文件模块化：
+            把spring的核心配置文件进行拆分，这个是dao层的-->
+
+
+<!--    spring整合mybatis-->
+<!--  引入jdbc.properties 文件  -->
+<context:property-placeholder location="classpath:jdbc.properties"/>
+<!--    1.数据源配置-->
+<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+    <property name="driverClassName" value="${jdbc.driver}"/>
+    <property name="url" value="${jdbc.url}"/>
+    <property name="username" value="${jdbc.username}"/>
+    <property name="password" value="${jdbc.password}"/>
+</bean>
+
+<!--    2.sqlSessionFactory 工厂对象交给spring-->
+<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+<!--    注入数据源-->
+    <property name="dataSource" ref="dataSource"/>
+<!--    指定类型别名-->
+    <property name="typeAliasesPackage" value="com.lagou.entity"/>
+
+<!--    配置 pageHelper 分页插件-->
+    <property name="plugins">
+        <array>
+            <bean class="com.github.pagehelper.PageHelper">
+<!--                指定方言为 mysql-->
+                <property name="properties">
+                    <value>helperDialect=mysql</value>
+                </property>
+            </bean>
+        </array>
+    </property>
+
+<!--    引入加载sqlMapperConfig.xml 核心配置文件-->
+    <property name="configLocation" value="classpath:sqlMapperConfig.xml"/>
+</bean>
+
+<!--    3.mapper映射扫描，扫描所有的mapper接口-->
+<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+<!--    对dao包进行扫描，包下的接口生成代理对象存到IOC -->
+    <property name="basePackage" value="com.lagou.dao"/>
+</bean>
+
+
+
+</beans>

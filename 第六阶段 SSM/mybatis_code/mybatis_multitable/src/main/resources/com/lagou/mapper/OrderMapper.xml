@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lagou.mapper.OrderMapper">
+
+<!--    一对一 关联查询：查询所有订单，与此同时还要查询出每个订单所属的用户信息-->
+<!--    resultType 是由mybatis自动映射封装的
+            是根据字段名和实体中的属性名进行匹配，从而调用属性的set方法，进行值的设置
+            但是连表查询的话就不能把连接的表的属性封装到对象中的-->
+
+<!--    所以想要完成映射封装那么就要用到resultMap来完成手动映射配置-->
+    
+    <resultMap id="orderMap" type="orders">
+<!--        property：实体中的id属性
+            column：表中的id字段-->
+        <id property="id" column="id"/>
+<!--        result标签：对于普通属性的映射配置-->
+        <result property="ordertime" column="ordertime"/>
+        <result property="total" column="total"/>
+        <result property="uid" column="uid"/>
+<!--        要将查询结果的User表记录封装到Orders实体中的user对象上-->
+
+<!--        association:在进行一对一关联查询配置时，使用association标签进行关联
+                property="user":要封装实体的属性名
+                javaType="com.lagou.domain.User" ：要封装的实体的属性类型-->
+        <association property="user" javaType="com.lagou.domain.User">
+<!--            配置查询结果中的字段与要封装的实体的属性 的映射关系
+                    column="uid":因为主表和从表的主外键一致，所以可以使用从表的外键字段来代替主表的主键字段-->
+            <id property="id" column="uid"/>
+            <result property="username" column="username"></result>
+            <result property="birthday" column="birthday"></result>
+            <result property="sex" column="sex"></result>
+            <result property="address" column="address"></result>
+        </association>
+    </resultMap>
+
+<!--    要在select标签上指明sql语句的查询结果要按照手动的映射配置来进行封装-->
+    <select id="findAllWithUser" resultMap="orderMap">
+        SELECT * FROM orders o LEFT JOIN USER u ON o.`uid` = u.`id`
+    </select>
+
+
+
+
+    <resultMap id="orderMap2" type="orders">
+        <id property="id" column="id"/>
+        <!--        result标签：对于普通属性的映射配置-->
+        <result property="ordertime" column="ordertime"/>
+        <result property="total" column="total"/>
+        <result property="uid" column="uid"/>
+
+<!--        把两条sql嵌套起来，查询出对应的用户信息并封装到Orders实体中的user属性上-->
+
+
+        <!--        在Orders实体中当前表示对方关系是一个实体对象，就要用到 association标签-->
+
+<!--        发起第二条sql语句的查询，根据第二条sql语句的查询结果把user对应的信息封装到user属性上-->
+
+
+        <!--   问题：1.怎么去执行第二条sql     2.如何执行第二条sql的时候，把uid作为参数进行传递
+             select:写namespace.id    这样的话，mybatis就可以根据statementid 能够定位到第二条要去执行的sql
+             由于执行第二条sql语句需要传递参数，就是根据第一条sql查询出来的uid
+             uid作为参数传递就可以使用 column
+             就写当前第一条sql语句查询出来的结果，要把哪个字段当做参数进行传递。当前要把uid进行传递，所以 column值就写 uid
+
+
+                column ： 表示要将查询结果中的哪个字段作为参数进行传递
+                column="uid"：其实就是把查询出来的uid的值作为参数进行传递
+
+                当前要去执行的第二条sql语句怎么定位到，就要根据select标签的值来定位
+                select标签的值就相当于Statementid
+             -->
+
+<!--        fetchType="eager":在查询订单及关联的用户信息的时候，采用立即加载策略-->
+        <association property="user" javaType="user" select="com.lagou.mapper.UserMapper.findById" column="uid" fetchType="eager"/>
+
+
+    </resultMap>
+
+
+<!-- 一对一嵌套查询
+    一对一配置中
+        使用<resultMap>和<association>标签做配置。
+            通过column条件来传递参数，执行对应的select查询
+            select是定位到哪条要执行的sql 属性
+
+        -->
+    <select id="findAllWithUser2" resultMap="orderMap2">
+        SELECT * FROM orders
+    </select>
+
+
+
+
+<!-- 根据uid查询对应订单 -->
+    <select id="findByUid" parameterType="int" resultType="orders">
+        SELECT * FROM orders WHERE uid = #{uid}
+    </select>
+
+
+</mapper>

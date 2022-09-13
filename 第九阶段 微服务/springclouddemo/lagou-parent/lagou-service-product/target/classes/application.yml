@@ -1,0 +1,29 @@
+server:
+  port: 9000 # 在微服务的集群环境中，通常会为每一个微服务叠加
+spring:
+  application:
+    name: lagou-service-product
+  datasource:
+     url: jdbc:mysql://localhost:3306/lagou?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+     username: root
+     password: 123456
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848 #nacos server 地址
+#eureka:
+#  client:
+#    service-url: # eureka server的路径
+#      defaultZone:  http://LagouCloudEurekaServerA:9200/eureka,http://LagouCloudEurekaServerB:9201/eureka
+#    registry-fetch-interval-seconds: 30 # 从Eureka Server 拉取服务列表的间隔时间
+#  instance:
+#    prefer-ip-address: true
+#    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:1.0-SNAPSHOT
+#    # 自定义元数据，会和标准元数据一起注册到服务注册中心，可以被注册中心的所有的client获取
+#    metadata-map:
+#      name: LengYue
+#      age: 18
+#      master: Lagou
+#      password: 123456
+#    lease-renewal-interval-in-seconds: 30 # 续约间隔
+#    lease-expiration-duration-in-seconds: 90 # 剔除的时间

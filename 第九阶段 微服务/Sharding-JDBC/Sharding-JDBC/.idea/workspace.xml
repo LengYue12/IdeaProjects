@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="63a3c77d-60bd-4243-98eb-936377d60f2a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\software\repository" />
+        <option name="mavenHome" value="D:/software/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\software\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1i4lqkQglJis3cMGIqRtuv9jlMh" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15136719" />
+    <property name="project.structure.side.proportion" value="0.24195032" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager" selected="JUnit.SysRegionDaoTest.testInsert">
+    <configuration name="NovelDaoTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="novel_web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagou.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.dao.NovelDaoTest" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NovelDaoTest.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="novel_web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagou.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.dao.NovelDaoTest" />
+      <option name="METHOD_NAME" value="testSelect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductsDaoTest.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sharding-jdbc-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagou.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.dao.ProductsDaoTest" />
+      <option name="METHOD_NAME" value="testSelect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SysRegionDaoTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="novel_web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagou.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.dao.SysRegionDaoTest" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsersDaoTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="novel_web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagou.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.dao.UsersDaoTest" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationNovel" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="novel_web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.ApplicationNovel" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunBoot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="sharding-jdbc-example" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.RunBoot" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SysRegionDaoTest.testInsert" />
+        <item itemvalue="JUnit.UsersDaoTest.testInsert" />
+        <item itemvalue="JUnit.NovelDaoTest.testSelect" />
+        <item itemvalue="JUnit.NovelDaoTest.testInsert" />
+        <item itemvalue="JUnit.ProductsDaoTest.testSelect" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="63a3c77d-60bd-4243-98eb-936377d60f2a" name="Default Changelist" comment="" />
+      <created>1601174938222</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601174938222</updated>
+      <workItem from="1601174941224" duration="3035000" />
+      <workItem from="1601185615794" duration="12793000" />
+      <workItem from="1601259312550" duration="7032000" />
+      <workItem from="1601346763606" duration="7772000" />
+      <workItem from="1662615898957" duration="10081000" />
+      <workItem from="1662798880095" duration="8399000" />
+      <workItem from="1662808191995" duration="261000" />
+      <workItem from="1662892583656" duration="13000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="176" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1662616012950">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="176" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.912@0.0.1440.912" timestamp="1662616012950" />
+    <state x="526" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1662804957449">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="526" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.912@0.0.1440.912" timestamp="1662804957449" />
+    <state x="313" y="115" key="#项目结构" timestamp="1662801256418">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="313" y="115" key="#项目结构/0.0.1440.912@0.0.1440.912" timestamp="1662801256418" />
+    <state x="501" y="212" key="FileChooserDialogImpl" timestamp="1662615937855">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="501" y="212" key="FileChooserDialogImpl/0.0.1440.912@0.0.1440.912" timestamp="1662615937855" />
+    <state width="1397" height="473" key="GridCell.Tab.0.bottom" timestamp="1662807884232">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="473" key="GridCell.Tab.0.bottom/0.0.1440.912@0.0.1440.912" timestamp="1662807884232" />
+    <state width="1397" height="473" key="GridCell.Tab.0.center" timestamp="1662807884232">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="473" key="GridCell.Tab.0.center/0.0.1440.912@0.0.1440.912" timestamp="1662807884232" />
+    <state width="1397" height="473" key="GridCell.Tab.0.left" timestamp="1662807884232">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="473" key="GridCell.Tab.0.left/0.0.1440.912@0.0.1440.912" timestamp="1662807884232" />
+    <state width="1397" height="473" key="GridCell.Tab.0.right" timestamp="1662807884232">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="473" key="GridCell.Tab.0.right/0.0.1440.912@0.0.1440.912" timestamp="1662807884232" />
+    <state x="222" y="99" key="SettingsEditor" timestamp="1662615991911">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="222" y="99" key="SettingsEditor/0.0.1440.912@0.0.1440.912" timestamp="1662615991911" />
+    <state x="108" y="151" key="new project wizard" timestamp="1662798991526">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="108" y="151" key="new project wizard/0.0.1440.912@0.0.1440.912" timestamp="1662798991526" />
+  </component>
+</project>

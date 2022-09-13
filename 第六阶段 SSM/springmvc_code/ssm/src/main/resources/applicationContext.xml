@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+       	http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+       	http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop.xsd
+">
+
+
+<!--    配置IOC相关操作：开启注解扫描，service层-->
+<context:component-scan base-package="com.lagou.service"/>
+
+<!--    引入properties文件-->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+
+<!--spring整合mybatis开始...................
+    主要配置三个bean标签，把以前写在SqlMapperConfig.xml 中的配置信息都转移到Spring的核心配置文件里
+    这样只加载applicationContext.xml 就ok了。那么当前所有的代理对象都由Spring创建管理存到IOC中
+
+
+        SqlSessionFactoryBean在创建时可以设置一些属性，设置DataSource。
+        SqlSessionFactory 工厂对象 是用来生产SqlSession会话对象的，而SqlSession会话对象要与数据库进行交互。
+        所以在创建SqlSessionFactory 时要指定数据源信息
+
+-->
+
+<!--    所以先来配置数据源-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+<!--sqlSessionFactory的创建权交给了spring  生产sqlSession了-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+<!--   引入dataSource数据源对象-->
+        <property name="dataSource" ref="dataSource"/>
+<!--        批量起别名，扫描包，为包下的实体类起别名，别名就是类名，不区分大小写-->
+        <property name="typeAliasesPackage" value="com.lagou.domain"/>
+<!--       引入加载mybatis的核心配置文件，可以不用去加载
+            加载spring的核心配置文件的同时，把mybatis核心配置文件也加载-->
+<!--        <property name="configLocation" value="classpath:SqlMapConfig.xml"/>-->
+    </bean>
+
+<!--    mapper映射扫描  MapperScannerConfigurer：扫描该包下的所有接口，生成对应的代理对象存到IOC容器中
+            MapperScannerConfigurer：就是对接口进行扫描，并且生成该接口的代理对象存到IOC中
+-->
+<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+<!--    接口所在的包路径-->
+    <property name="basePackage" value="com.lagou.dao"/>
+</bean>
+<!--spring整合mybatis结束......................-->
+
+
+
+<!--    spring的声明式事务-->
+<!--1.配置事务管理器-->
+<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+<!--    注入数据源对象-->
+    <property name="dataSource" ref="dataSource"/>
+</bean>
+
+
+<!--  2.开启事务注解的支持  -->
+<tx:annotation-driven/>
+
+
+</beans>

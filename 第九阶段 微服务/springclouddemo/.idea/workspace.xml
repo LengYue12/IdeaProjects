@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a1e8853f-1b62-405c-8a11-8d75ecfe0c54" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="local-mysql" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="local-mysql" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="local-mysql" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="lagou: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="local-mysql" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="lagou: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="products: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\software\repository" />
+        <option name="mavenHome" value="D:/software/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\software\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2DTpfGnQZ1l60lBYqrjxXI94cgk" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lagou-parent/lagou-service-page/src/main/resources" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15136719" />
+    <property name="project.structure.side.proportion" value="0.25609756" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\idea\springclouddemo\lagou-parent\lagou-service-page\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ProductApplication">
+    <configuration name="Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lagou-service-product" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="lagou-service-page" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.PageApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="lagou-service-product" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.ProductApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.PageApplication" />
+        <item itemvalue="Spring Boot.ProductApplication" />
+        <item itemvalue="JUnit.Test.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1e8853f-1b62-405c-8a11-8d75ecfe0c54" name="默认更改列表" comment="" />
+      <created>1660733029818</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660733029818</updated>
+      <workItem from="1660733031038" duration="1493000" />
+      <workItem from="1661077465147" duration="10072000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="313" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1661078953468">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="313" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.912@0.0.1440.912" timestamp="1661078953468" />
+    <state x="526" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1661083818277">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="526" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.912@0.0.1440.912" timestamp="1661083818277" />
+    <state x="451" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1661085931910">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="451" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.912@0.0.1440.912" timestamp="1661085931910" />
+    <state x="313" y="115" key="#项目结构" timestamp="1661080429784">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="313" y="115" key="#项目结构/0.0.1440.912@0.0.1440.912" timestamp="1661080429784" />
+    <state x="501" y="212" key="FileChooserDialogImpl" timestamp="1661085916887">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="501" y="212" key="FileChooserDialogImpl/0.0.1440.912@0.0.1440.912" timestamp="1661085916887" />
+    <state width="1397" height="605" key="GridCell.Tab.0.bottom" timestamp="1661088740473">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="605" key="GridCell.Tab.0.bottom/0.0.1440.912@0.0.1440.912" timestamp="1661088740473" />
+    <state width="1397" height="605" key="GridCell.Tab.0.center" timestamp="1661088740473">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="605" key="GridCell.Tab.0.center/0.0.1440.912@0.0.1440.912" timestamp="1661088740473" />
+    <state width="1397" height="605" key="GridCell.Tab.0.left" timestamp="1661088740473">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="605" key="GridCell.Tab.0.left/0.0.1440.912@0.0.1440.912" timestamp="1661088740473" />
+    <state width="1397" height="605" key="GridCell.Tab.0.right" timestamp="1661088740473">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="605" key="GridCell.Tab.0.right/0.0.1440.912@0.0.1440.912" timestamp="1661088740473" />
+    <state width="1397" height="605" key="GridCell.Tab.1.bottom" timestamp="1661088740473">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="605" key="GridCell.Tab.1.bottom/0.0.1440.912@0.0.1440.912" timestamp="1661088740473" />
+    <state width="1397" height="605" key="GridCell.Tab.1.center" timestamp="1661088740473">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="605" key="GridCell.Tab.1.center/0.0.1440.912@0.0.1440.912" timestamp="1661088740473" />
+    <state width="1397" height="605" key="GridCell.Tab.1.left" timestamp="1661088740473">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="605" key="GridCell.Tab.1.left/0.0.1440.912@0.0.1440.912" timestamp="1661088740473" />
+    <state width="1397" height="605" key="GridCell.Tab.1.right" timestamp="1661088740473">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="605" key="GridCell.Tab.1.right/0.0.1440.912@0.0.1440.912" timestamp="1661088740473" />
+    <state x="222" y="62" key="SettingsEditor" timestamp="1661077602317">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="222" y="62" key="SettingsEditor/0.0.1440.912@0.0.1440.912" timestamp="1661077602317" />
+    <state x="108" y="67" key="new project wizard" timestamp="1661087556547">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="108" y="67" key="new project wizard/0.0.1440.912@0.0.1440.912" timestamp="1661087556547" />
+  </component>
+</project>

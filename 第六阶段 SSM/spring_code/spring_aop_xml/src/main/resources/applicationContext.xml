@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+<!--    基于XML的AOP开发-->
+
+
+
+    <!--目标类交给IOC容器-->
+    <bean id="accountServcie" class="com.lagou.service.impl.AccountServiceImpl"/>
+
+    <!--通知类交给IOC容器-->
+    <bean id="myAdvice" class="com.lagou.advice.MyAdvice"/>
+
+
+
+<!--
+    表达式语法：
+      execution([修饰符] 返回值类型 包名.类名.方法名(参数类型))
+      execution(public void com.lagou.service.impl.AccountServiceImpl.transfer(java.lang.String))
+
+      - 表达式中的访问修饰符可省略
+      execution(void com.lagou.service.impl.AccountServiceImpl.transfer(java.lang.String))
+
+      - 返回值类型、包名、类名、方法名可以使用星号 * 代替，代表任意      任意包下的任意类的 无参方法
+      execution(* *.*.*.*.*.*())
+
+      - 包名和类名之间一个点 . 代表当前包下的类， 两个点 .. 表示当前包及其子包下的类
+       任意包下及其子包下的任意类  .. 表示该包下的所有子包
+      execution(* *..*.*())
+
+      - 参数列表可以使用两个点 ..       表示任意个数，任意类型的参数列表
+      表示匹配任意返回值类型，任意包下的任意类的任意方法
+      execution(* *..*.*(..))       表示任意个数，任意类型的参数
+
+
+
+-->
+
+
+
+
+
+
+<!--    AOP织入配置
+
+            表示将用到myAdvice里的before方法来对 pointcut="" 这个表达式所匹配到的切点方法，目标方法进行 aop:before 前置增强
+
+-->
+<aop:config>
+<!--    配置切面：切入点+通知
+            ref="myAdvice"：引用通知类为myAdvice这个类
+-->
+
+<!--  抽取切点表达式
+            把重复的代码进行抽取，方便维护
+        -->
+    <aop:pointcut id="myPointcut" expression="execution(* com.lagou.service.impl.AccountServiceImpl.*(..))"/>
+
+
+
+<!--切面配置    ref：就是引用通知类，包含增强业务逻辑的类-->
+
+    <aop:aspect ref="myAdvice">
+<!--        method=""：表示要用到该通知类里面的哪个方法作为增强方法
+            pointcut=""：配置切入点
+                配置目标类的transfer方法执行时，会使用myAdvice类中的before方法做一个前置增强
+                    就是在transfer方法执行之前 myAdvice里面的before方法要优先于transfer方法之前执行
+-->
+<!--
+
+        pointcut="execution(* com.lagou.service.impl.AccountServiceImpl.*(..))"：切入点表达式，
+            execution关键字(表达式)，表示要对AccountServiceImpl这个类中的所有方法，不管参数类型，参数个数的方法。
+                        都进行拦截                   常见
+  -->
+
+<!--      pointcut-ref="myPointcut"：表示引用配置好的切点表达式  -->
+<!--        <aop:before method="before" pointcut-ref="myPointcut"/>-->
+<!--        <aop:after-returning method="afterReturning" pointcut-ref="myPointcut"/>-->
+<!--        <aop:after-throwing method="afterThrowing" pointcut-ref="myPointcut"/>-->
+<!--        <aop:after method="after" pointcut-ref="myPointcut"/>-->
+
+<!--        配置环绕通知。开发者可以手动控制增强代码在什么时候执行-->
+        <aop:around method="around" pointcut-ref="myPointcut"/>
+
+    </aop:aspect>
+</aop:config>
+
+
+
+</beans>
+
+

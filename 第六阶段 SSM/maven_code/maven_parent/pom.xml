@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.lagou</groupId>
+    <artifactId>maven_parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <!--聚合就是通过配置将多个子工程聚合在一起进行统一操作，使用modules标签
+            当聚合完成之后，对于父工程的执行命令，子工程同样也会执行
+    -->
+
+<!--    当前的父工程对子工程进行了聚合-->
+    <modules>
+        <module>maven_children</module>
+<!--        聚合其他工程-->
+        <module>../maven_advanced</module>
+    </modules>
+
+    <!--    声明当前工程为父工程-->
+    <packaging>pom</packaging>
+
+
+<!--    统一的版本锁定及依赖管理-->
+    <dependencies>
+
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.5.5</version>
+        </dependency>
+    </dependencies>
+</project>

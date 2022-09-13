@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3cc91a42-1d01-4e75-a6d9-3cf028b09dbb" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\software\repository" />
+        <option name="mavenHome" value="D:/software/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\software\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2COOh8m4Xc4mMv9tKzIk5Ebqyew" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager" selected="Application.Test_JedisPool">
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lagou.Test1" />
+      <module name="lagou-jedis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test2_API" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lagou.Test2_API" />
+      <module name="lagou-jedis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_JedisPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lagou.Test_JedisPool" />
+      <module name="lagou-jedis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_Transaction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lagou.Test_Transaction" />
+      <module name="lagou-jedis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test_JedisPool" />
+        <item itemvalue="Application.Test_Transaction" />
+        <item itemvalue="Application.Test2_API" />
+        <item itemvalue="Application.Test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3cc91a42-1d01-4e75-a6d9-3cf028b09dbb" name="默认更改列表" comment="" />
+      <created>1658670280557</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658670280557</updated>
+      <workItem from="1658670283437" duration="5626000" />
+      <workItem from="1658809134058" duration="897000" />
+      <workItem from="1658827070249" duration="6000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1397" height="287" key="GridCell.Tab.0.bottom" timestamp="1658675958231">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="287" key="GridCell.Tab.0.bottom/0.0.1440.912@0.0.1440.912" timestamp="1658675958231" />
+    <state width="1397" height="287" key="GridCell.Tab.0.center" timestamp="1658675958231">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="287" key="GridCell.Tab.0.center/0.0.1440.912@0.0.1440.912" timestamp="1658675958231" />
+    <state width="1397" height="287" key="GridCell.Tab.0.left" timestamp="1658675958231">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="287" key="GridCell.Tab.0.left/0.0.1440.912@0.0.1440.912" timestamp="1658675958231" />
+    <state width="1397" height="287" key="GridCell.Tab.0.right" timestamp="1658675958231">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="287" key="GridCell.Tab.0.right/0.0.1440.912@0.0.1440.912" timestamp="1658675958231" />
+    <state width="1397" height="287" key="GridCell.Tab.1.bottom" timestamp="1658675958231">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="287" key="GridCell.Tab.1.bottom/0.0.1440.912@0.0.1440.912" timestamp="1658675958231" />
+    <state width="1397" height="287" key="GridCell.Tab.1.center" timestamp="1658675958231">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="287" key="GridCell.Tab.1.center/0.0.1440.912@0.0.1440.912" timestamp="1658675958231" />
+    <state width="1397" height="287" key="GridCell.Tab.1.left" timestamp="1658675958231">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="287" key="GridCell.Tab.1.left/0.0.1440.912@0.0.1440.912" timestamp="1658675958231" />
+    <state width="1397" height="287" key="GridCell.Tab.1.right" timestamp="1658675958231">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="287" key="GridCell.Tab.1.right/0.0.1440.912@0.0.1440.912" timestamp="1658675958231" />
+    <state x="222" y="99" key="SettingsEditor" timestamp="1658670294996">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="222" y="99" key="SettingsEditor/0.0.1440.912@0.0.1440.912" timestamp="1658670294996" />
+    <state x="492" y="159" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1658671647187">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="492" y="159" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1440.912@0.0.1440.912" timestamp="1658671647187" />
+    <state x="108" y="152" key="new project wizard" timestamp="1658675951561">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="108" y="152" key="new project wizard/0.0.1440.912@0.0.1440.912" timestamp="1658675951561" />
+  </component>
+</project>

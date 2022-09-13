@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--映射配置文件
+        namespace：命名空间的值要和接口的全路径一致-->
+
+<mapper namespace="com.lagou.dao.DeptDao">
+<!--    查询所有部门信息 public List<Dept> findAll();
+            id和接口里的方法名保持一致
+-->
+    <select id="findAll" resultType="Dept">
+        select * from tb_dept
+    </select>
+</mapper>

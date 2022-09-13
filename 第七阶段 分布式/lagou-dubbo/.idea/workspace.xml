@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="df084ec7-ee11-4077-b455-6e8f2b626ec0" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\software\repository" />
+        <option name="mavenHome" value="D:/software/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\software\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2CHiwFdAFYlqWKVwAa2cQ8tFXJE" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lagou-dubbo-parent/lagou-dubbo-web/src/main/webapp" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15136719" />
+    <property name="project.structure.side.proportion" value="0.25609756" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\idea\lagou-dubbo-parent\lagou-dubbo-service\src\main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\idea\lagou-dubbo-parent\lagou-dubbo-web\src\main\resources" />
+      <recent name="D:\workspace\idea\lagou-dubbo-parent\lagou-dubbo-service\src\main\resources\spring" />
+      <recent name="D:\workspace\idea\lagou-dubbo-parent\lagou-dubbo-dao\src\main\resources" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="df084ec7-ee11-4077-b455-6e8f2b626ec0" name="默认更改列表" comment="" />
+      <created>1658466147714</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658466147714</updated>
+      <workItem from="1658466150111" duration="4256000" />
+      <workItem from="1658470486697" duration="512000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="176" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1658470752058">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="176" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.912@0.0.1440.912" timestamp="1658470752058" />
+    <state x="526" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1658467988847">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="526" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.912@0.0.1440.912" timestamp="1658467988847" />
+    <state x="435" y="394" width="747" height="186" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1658469932737">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="435" y="394" width="747" height="186" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1440.912@0.0.1440.912" timestamp="1658469932737" />
+    <state x="531" y="394" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1658469944259">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="531" y="394" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1440.912@0.0.1440.912" timestamp="1658469944259" />
+    <state x="313" y="115" key="#项目结构" timestamp="1658468546305">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="313" y="115" key="#项目结构/0.0.1440.912@0.0.1440.912" timestamp="1658468546305" />
+    <state x="391" y="229" key="FileChooserDialogImpl" timestamp="1658469943497">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="391" y="229" key="FileChooserDialogImpl/0.0.1440.912@0.0.1440.912" timestamp="1658469943497" />
+    <state width="1397" height="478" key="GridCell.Tab.0.bottom" timestamp="1658471003083">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="478" key="GridCell.Tab.0.bottom/0.0.1440.912@0.0.1440.912" timestamp="1658471003083" />
+    <state width="1397" height="478" key="GridCell.Tab.0.center" timestamp="1658471003083">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="478" key="GridCell.Tab.0.center/0.0.1440.912@0.0.1440.912" timestamp="1658471003083" />
+    <state width="1397" height="478" key="GridCell.Tab.0.left" timestamp="1658471003083">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="478" key="GridCell.Tab.0.left/0.0.1440.912@0.0.1440.912" timestamp="1658471003083" />
+    <state width="1397" height="478" key="GridCell.Tab.0.right" timestamp="1658471003083">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state width="1397" height="478" key="GridCell.Tab.0.right/0.0.1440.912@0.0.1440.912" timestamp="1658471003083" />
+    <state x="222" y="62" key="SettingsEditor" timestamp="1658470515146">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="222" y="62" key="SettingsEditor/0.0.1440.912@0.0.1440.912" timestamp="1658470515146" />
+    <state x="108" y="151" key="new project wizard" timestamp="1658468484291">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="108" y="151" key="new project wizard/0.0.1440.912@0.0.1440.912" timestamp="1658468484291" />
+  </component>
+</project>

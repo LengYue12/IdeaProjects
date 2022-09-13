@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="userMapper">
+<!--    namespace:命名空间：与id属性共同构成唯一标识 namespace.id:user.findAll
+        resultType:返回结果类型(完成自动映射封装):要封装的实体的全路径
+-->
+<!-- resultType：就是将SQL查询出来的数据封装成一个个User实体对象 -->
+    <select id="findAll" resultType="UseR">
+        select * from user
+    </select>
+
+<!--    新增用户-->
+<!--    #{}:mybatis中的占位符，等同于JDBC中的?-->
+<!--    parameterType:指定接收到参数类型   就是封装好属性的一个user对象-->
+<!--    需要在#{}里面指明当前接收的实体参数中的哪个属性值-->
+<!--    #{}里面的值要和传递过来的实体对象里面的get方法后面的首字母小写保持一致-->
+<!--    #{}里面的值要和传递过来的实体对象里面的属性名称保持一致-->
+    <insert id="saveUser" parameterType="user">
+        insert into user (username,birthday,sex,address) values (#{username},#{birthday},#{sex},#{address});
+    </insert>
+
+<!--    更新用户-->
+<!--    参数封装成user实体对象，当做参数传递-->
+<!--    parameterType：指定传递参数的类型-->
+<!--    #{}中指明当前引用的是传递过来的实体中的哪个属性值-->
+    <update id="updateUser" parameterType="user">
+        update user set username = #{username},birthday = #{birthday},sex = #{sex},address = #{address} where id = #{id}
+    </update>
+
+
+<!--    删除用户-->
+<!--    parameterType接收到的实际参数就是个int类型的数字，所以类型就是int类型的数值-->
+<!--    当parameterType的类型为基本数据类型或String时，且个数只有一个时，#{}里面的值随便写，因为不管写什么，要引用的都是实际传递过来的唯一值-->
+    <delete id="deleteUser" parameterType="int">
+        delete from user where id = #{abc}
+    </delete>
+</mapper>

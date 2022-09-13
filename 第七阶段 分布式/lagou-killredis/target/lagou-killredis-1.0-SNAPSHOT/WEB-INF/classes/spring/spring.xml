@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+">
+
+    <context:component-scan base-package="controller"/>
+
+<!--    spring为连接Redis，提供的一个模板工具类-->
+    <bean id="stringRedisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate">
+<!--        连接工厂-->
+        <property name="connectionFactory" ref="connectionFactory"/>
+    </bean>
+
+<!--    使用Jedis连接Redis-->
+    <bean id="connectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
+<!--        主机-->
+        <property name="hostName" value="192.168.114.128"/>
+<!--                  端口-->
+        <property name="port" value="6379"/>
+    </bean>
+
+</beans>
