@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4b40f03b-583f-4cc0-b71f-6f7fe2d405ee" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/第九阶段 微服务/springclouddemo/lagou-parent/lagou-cloud-config/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/第九阶段 微服务/springclouddemo/lagou-parent/lagou-cloud-config/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/第九阶段 微服务/springclouddemo/lagou-parent/lagou-cloud-config/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/第九阶段 微服务/springclouddemo/lagou-parent/lagou-cloud-config/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/第九阶段 微服务/springclouddemo/lagou-parent/lagou-cloud-eureka-9201/target/classes/com/lagou/eureka/EurekaApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/第九阶段 微服务/springclouddemo/lagou-parent/lagou-service-page-9101/target/classes/com/lagou/PageApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/第九阶段 微服务/springclouddemo/lagou-parent/lagou-service-product-9001/target/classes/META-INF/lagou-service-product-9001.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/第九阶段 微服务/springclouddemo/lagou-parent/lagou-service-product-9001/target/classes/META-INF/lagou-service-product.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/第九阶段 微服务/springclouddemo/lagou-parent/lagou-service-product-9001/target/classes/com/lagou/ProductApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/第九阶段 微服务/springclouddemo/lagou-parent/lagou-service-product-9001/target/test-classes/META-INF/lagou-service-product.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/第九阶段 微服务/springclouddemo/lagou-parent/lagou-service-product/target/classes/META-INF/lagou-service-product.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/第九阶段 微服务/springclouddemo/lagou-parent/lagou-service-product/target/test-classes/META-INF/lagou-service-product.kotlin_module" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\software\repository" />
+        <option name="mavenHome" value="D:/software/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\software\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2F2KaVT0gqon9CZZpm6um8rjnA8" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/git_code" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4b40f03b-583f-4cc0-b71f-6f7fe2d405ee" name="默认更改列表" comment="" />
+      <created>1663684802795</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663684802795</updated>
+      <workItem from="1663684805101" duration="56000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="313" y="115" key="#项目结构" timestamp="1663684807821">
+      <screen x="0" y="0" width="1440" height="912" />
+    </state>
+    <state x="313" y="115" key="#项目结构/0.0.1440.912@0.0.1440.912" timestamp="1663684807821" />
+  </component>
+</project>

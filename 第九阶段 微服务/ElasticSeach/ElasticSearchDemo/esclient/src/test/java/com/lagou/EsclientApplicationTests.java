@@ -55,14 +55,13 @@ public class EsclientApplicationTests {
         // 调用基础查询方法
         baseQuery(searchSourceBuilder);
 
-
     }
 
     @Test
     public void sourceFilter() throws IOException {
         SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
         // 指定查询条件和查询类型
-        searchSourceBuilder.query(QueryBuilders.rangeQuery("price").gte(3600).lte(4300));
+        searchSourceBuilder.query(QueryBuilders.rangeQuery("price").gte(3000).lte(4300));
         // source过滤，只保留id、title、price
         searchSourceBuilder.fetchSource(new String[]{"id","title","price"},null);
         baseQuery(searchSourceBuilder);
@@ -75,7 +74,7 @@ public class EsclientApplicationTests {
     public void rangeQuery() throws IOException {
         SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
         // 指定查询条件和查询类型
-        searchSourceBuilder.query(QueryBuilders.rangeQuery("price").gte(3600).lte(4300));
+        searchSourceBuilder.query(QueryBuilders.rangeQuery("price").gte(3000).lte(4300));
         baseQuery(searchSourceBuilder);
     }
 
@@ -109,7 +108,6 @@ public class EsclientApplicationTests {
         searchSourceBuilder.query(QueryBuilders.matchAllQuery());
         // 执行排序 价格升序排序
         searchSourceBuilder.sort("price", SortOrder.ASC);
-        baseQuery(searchSourceBuilder);
 
         // 分页信息
         // 当前页
@@ -164,11 +162,11 @@ public class EsclientApplicationTests {
         product.setId(1L);
         product.setImages("http://image.huawei.com/1.jpg");
         product.setPrice(5999.99);
-        product.setTitle("华为P50就是好");
+        product.setTitle("华为P30");
         // 2.将文档数据转换为JSON
         String source = gson.toJson(product);
         // 3.创建索引请求对象，访问哪个索引库，哪个type，指定文档id
-        IndexRequest indexRequest = new IndexRequest("lagou","_doc",product.getId().toString());
+        IndexRequest indexRequest = new IndexRequest("lagou","product",product.getId().toString());
         indexRequest.source(source, XContentType.JSON);
         // 4.发出请求
         IndexResponse indexResponse = restHighLevelClient.index(indexRequest, RequestOptions.DEFAULT);
@@ -178,7 +176,7 @@ public class EsclientApplicationTests {
     @Test
     public void testQuery() throws IOException {
         // 初始化GetRequest对象
-        GetRequest getRequest = new GetRequest("lagou","_doc","1");
+        GetRequest getRequest = new GetRequest("lagou","product","1");
         // 执行查询
         GetResponse getResponse = restHighLevelClient.get(getRequest, RequestOptions.DEFAULT);
         // 取出数据
@@ -192,7 +190,7 @@ public class EsclientApplicationTests {
     @Test
     public void testDelete() throws IOException {
         // 初始化DeleteRequest对象
-        DeleteRequest deleteRequest = new DeleteRequest("lagou","_doc","1");
+        DeleteRequest deleteRequest = new DeleteRequest("lagou","product","1");
         // 执行删除
         DeleteResponse delete = restHighLevelClient.delete(deleteRequest, RequestOptions.DEFAULT);
         System.out.println(delete);

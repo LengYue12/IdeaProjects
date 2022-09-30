@@ -23,7 +23,7 @@ spring:
             - lagou-config
       label: master
   rabbitmq:
-    host: 192.168.114.128
+    host: 192.168.200.141
     port: 5672
     username: lengyue
     password: 123456

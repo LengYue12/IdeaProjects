@@ -1,7 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63a3c77d-60bd-4243-98eb-936377d60f2a" name="Default Changelist" comment="" />
+    <list default="true" id="63a3c77d-60bd-4243-98eb-936377d60f2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/java/com/lagou/AccountApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/java/com/lagou/config/SeataConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/java/com/lagou/controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/java/com/lagou/dao/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/java/com/lagou/entity/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/java/com/lagou/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/java/com/lagou/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/resources/file.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/resources/registry.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/resources/seata.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/src/main/java/com/lagou/FrontApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/src/main/java/com/lagou/controller/frontController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/src/main/java/com/lagou/remote/AccountRemoteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/src/main/java/com/lagou/remote/OrderRemoteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/src/main/java/com/lagou/service/BusinessService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/src/main/java/com/lagou/service/impl/BusinessServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/src/main/resources/file.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/src/main/resources/registry.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/src/main/resources/seata.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/java/com/lagou/OrderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/java/com/lagou/config/SeataConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/java/com/lagou/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/java/com/lagou/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/java/com/lagou/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/java/com/lagou/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/java/com/lagou/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/resources/file.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/resources/registry.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/resources/seata.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ElasticSeach/ElasticSearchDemo/esclient/src/main/java/com/lagou/resposisory/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ElasticSeach/ElasticSearchDemo/esclient/src/main/java/com/lagou/resposisory/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ElasticSeach/ElasticSearchDemo/esclient/src/test/java/com/lagou/EsclientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ElasticSeach/ElasticSearchDemo/esclient/src/test/java/com/lagou/EsclientApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ElasticSeach/ElasticSearchDemo/esclient/src/test/java/com/lagou/EsclientApplicationTests2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ElasticSeach/ElasticSearchDemo/esclient/src/test/java/com/lagou/EsclientApplicationTests2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ElasticSeach/ElasticSearchDemo/esclient/target/test-classes/com/lagou/EsclientApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ElasticSeach/ElasticSearchDemo/esclient/target/test-classes/com/lagou/EsclientApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ElasticSeach/ElasticSearchDemo/esclient/target/test-classes/com/lagou/EsclientApplicationTests2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ElasticSeach/ElasticSearchDemo/esclient/target/test-classes/com/lagou/EsclientApplicationTests2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sharding-jdbc-example/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sharding-jdbc-example/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sharding-jdbc-example/src/test/java/com/lagou/dao/DistrictDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sharding-jdbc-example/src/test/java/com/lagou/dao/DistrictDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sharding-jdbc-example/src/test/java/com/lagou/dao/PayOrderDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sharding-jdbc-example/src/test/java/com/lagou/dao/PayOrderDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-cloud-config/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-cloud-config/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-cloud-config/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-cloud-config/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-cloud-eureka-9201/target/classes/com/lagou/eureka/EurekaApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-service-page-9101/target/classes/com/lagou/PageApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-service-page/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-service-page/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-service-product-9001/target/classes/META-INF/lagou-service-product-9001.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-service-product-9001/target/classes/META-INF/lagou-service-product.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-service-product-9001/target/classes/com/lagou/ProductApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-service-product-9001/target/test-classes/META-INF/lagou-service-product.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-service-product/target/classes/META-INF/lagou-service-product.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-service-product/target/test-classes/META-INF/lagou-service-product.kotlin_module" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +84,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -45,6 +103,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1i4lqkQglJis3cMGIqRtuv9jlMh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -62,9 +121,16 @@
     <property name="project.structure.side.proportion" value="0.24195032" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="JUnit.SysRegionDaoTest.testInsert">
-    <configuration name="NovelDaoTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="novel_web" />
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ProductsDaoTest.testSelect">
+    <configuration name="DistrictDaoTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sharding-jdbc-example" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.lagou.dao.*" />
@@ -72,15 +138,31 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.lagou.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.lagou.dao.NovelDaoTest" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.dao.DistrictDaoTest" />
+      <option name="METHOD_NAME" value="testDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DistrictDaoTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sharding-jdbc-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagou.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagou.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.dao.DistrictDaoTest" />
       <option name="METHOD_NAME" value="testInsert" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NovelDaoTest.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="novel_web" />
+    <configuration name="ProductsDaoTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sharding-jdbc-example" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.lagou.dao.*" />
@@ -88,8 +170,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.lagou.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.lagou.dao.NovelDaoTest" />
-      <option name="METHOD_NAME" value="testSelect" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.dao.ProductsDaoTest" />
+      <option name="METHOD_NAME" value="testInsert" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -111,8 +193,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SysRegionDaoTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="novel_web" />
+    <configuration name="UserDaoTest.testFindUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sharding-jdbc-example" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.lagou.dao.*" />
@@ -120,24 +202,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.lagou.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.lagou.dao.SysRegionDaoTest" />
-      <option name="METHOD_NAME" value="testInsert" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UsersDaoTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="novel_web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lagou.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lagou.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.lagou.dao.UsersDaoTest" />
-      <option name="METHOD_NAME" value="testInsert" />
+      <option name="MAIN_CLASS_NAME" value="com.lagou.dao.UserDaoTest" />
+      <option name="METHOD_NAME" value="testFindUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,11 +225,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SysRegionDaoTest.testInsert" />
-        <item itemvalue="JUnit.UsersDaoTest.testInsert" />
-        <item itemvalue="JUnit.NovelDaoTest.testSelect" />
-        <item itemvalue="JUnit.NovelDaoTest.testInsert" />
         <item itemvalue="JUnit.ProductsDaoTest.testSelect" />
+        <item itemvalue="JUnit.ProductsDaoTest.testInsert" />
+        <item itemvalue="JUnit.DistrictDaoTest.testDelete" />
+        <item itemvalue="JUnit.DistrictDaoTest.testInsert" />
+        <item itemvalue="JUnit.UserDaoTest.testFindUser" />
       </list>
     </recent_temporary>
   </component>
@@ -185,6 +251,7 @@
       <workItem from="1662798880095" duration="8399000" />
       <workItem from="1662808191995" duration="261000" />
       <workItem from="1662892583656" duration="13000" />
+      <workItem from="1664362126448" duration="6552000" />
     </task>
     <servers />
   </component>
@@ -208,22 +275,22 @@
       <screen x="0" y="0" width="1440" height="912" />
     </state>
     <state x="501" y="212" key="FileChooserDialogImpl/0.0.1440.912@0.0.1440.912" timestamp="1662615937855" />
-    <state width="1397" height="473" key="GridCell.Tab.0.bottom" timestamp="1662807884232">
+    <state width="1397" height="473" key="GridCell.Tab.0.bottom" timestamp="1664370118345">
       <screen x="0" y="0" width="1440" height="912" />
     </state>
-    <state width="1397" height="473" key="GridCell.Tab.0.bottom/0.0.1440.912@0.0.1440.912" timestamp="1662807884232" />
-    <state width="1397" height="473" key="GridCell.Tab.0.center" timestamp="1662807884232">
+    <state width="1397" height="473" key="GridCell.Tab.0.bottom/0.0.1440.912@0.0.1440.912" timestamp="1664370118345" />
+    <state width="1397" height="473" key="GridCell.Tab.0.center" timestamp="1664370118345">
       <screen x="0" y="0" width="1440" height="912" />
     </state>
-    <state width="1397" height="473" key="GridCell.Tab.0.center/0.0.1440.912@0.0.1440.912" timestamp="1662807884232" />
-    <state width="1397" height="473" key="GridCell.Tab.0.left" timestamp="1662807884232">
+    <state width="1397" height="473" key="GridCell.Tab.0.center/0.0.1440.912@0.0.1440.912" timestamp="1664370118345" />
+    <state width="1397" height="473" key="GridCell.Tab.0.left" timestamp="1664370118345">
       <screen x="0" y="0" width="1440" height="912" />
     </state>
-    <state width="1397" height="473" key="GridCell.Tab.0.left/0.0.1440.912@0.0.1440.912" timestamp="1662807884232" />
-    <state width="1397" height="473" key="GridCell.Tab.0.right" timestamp="1662807884232">
+    <state width="1397" height="473" key="GridCell.Tab.0.left/0.0.1440.912@0.0.1440.912" timestamp="1664370118345" />
+    <state width="1397" height="473" key="GridCell.Tab.0.right" timestamp="1664370118345">
       <screen x="0" y="0" width="1440" height="912" />
     </state>
-    <state width="1397" height="473" key="GridCell.Tab.0.right/0.0.1440.912@0.0.1440.912" timestamp="1662807884232" />
+    <state width="1397" height="473" key="GridCell.Tab.0.right/0.0.1440.912@0.0.1440.912" timestamp="1664370118345" />
     <state x="222" y="99" key="SettingsEditor" timestamp="1662615991911">
       <screen x="0" y="0" width="1440" height="912" />
     </state>

@@ -1,0 +1,23 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: test-order
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.200.141:3306/test-order?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: LengYue
+    password: LengYue@520
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: my_tx_group
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}

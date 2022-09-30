@@ -17,11 +17,11 @@
             <artifactId>lagou-service-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-<!--&lt;!&ndash;        Eureka client&ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
-<!--        </dependency>-->
+<!--        Eureka client
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>-->
         <!--        Spring Cloud alibaba nacos客户端的依赖-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>

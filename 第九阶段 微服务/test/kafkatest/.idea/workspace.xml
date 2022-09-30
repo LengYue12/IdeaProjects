@@ -1,7 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f09e077-28fd-4cf6-933a-6b63da38a090" name="默认更改列表" comment="" />
+    <list default="true" id="9f09e077-28fd-4cf6-933a-6b63da38a090" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/java/com/lagou/AccountApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/java/com/lagou/config/SeataConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/java/com/lagou/controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/java/com/lagou/dao/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/java/com/lagou/entity/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/java/com/lagou/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/java/com/lagou/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/resources/file.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/resources/registry.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-account/src/main/resources/seata.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/src/main/java/com/lagou/FrontApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/src/main/java/com/lagou/controller/frontController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/src/main/java/com/lagou/remote/AccountRemoteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/src/main/java/com/lagou/remote/OrderRemoteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/src/main/java/com/lagou/service/BusinessService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/src/main/java/com/lagou/service/impl/BusinessServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/src/main/resources/file.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/src/main/resources/registry.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-front/src/main/resources/seata.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/java/com/lagou/OrderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/java/com/lagou/config/SeataConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/java/com/lagou/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/java/com/lagou/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/java/com/lagou/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/java/com/lagou/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/java/com/lagou/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/resources/file.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/resources/registry.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test-seata/test-order/src/main/resources/seata.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ElasticSeach/ElasticSearchDemo/esclient/src/main/java/com/lagou/resposisory/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ElasticSeach/ElasticSearchDemo/esclient/src/main/java/com/lagou/resposisory/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ElasticSeach/ElasticSearchDemo/esclient/src/test/java/com/lagou/EsclientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ElasticSeach/ElasticSearchDemo/esclient/src/test/java/com/lagou/EsclientApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ElasticSeach/ElasticSearchDemo/esclient/src/test/java/com/lagou/EsclientApplicationTests2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ElasticSeach/ElasticSearchDemo/esclient/src/test/java/com/lagou/EsclientApplicationTests2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ElasticSeach/ElasticSearchDemo/esclient/target/test-classes/com/lagou/EsclientApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ElasticSeach/ElasticSearchDemo/esclient/target/test-classes/com/lagou/EsclientApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ElasticSeach/ElasticSearchDemo/esclient/target/test-classes/com/lagou/EsclientApplicationTests2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ElasticSeach/ElasticSearchDemo/esclient/target/test-classes/com/lagou/EsclientApplicationTests2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-cloud-config/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-cloud-config/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-cloud-config/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-cloud-config/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-cloud-eureka-9201/target/classes/com/lagou/eureka/EurekaApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-service-page-9101/target/classes/com/lagou/PageApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-service-page/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-service-page/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-service-product-9001/target/classes/META-INF/lagou-service-product-9001.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-service-product-9001/target/classes/META-INF/lagou-service-product.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-service-product-9001/target/classes/com/lagou/ProductApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-service-product-9001/target/test-classes/META-INF/lagou-service-product.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-service-product/target/classes/META-INF/lagou-service-product.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springclouddemo/lagou-parent/lagou-service-product/target/test-classes/META-INF/lagou-service-product.kotlin_module" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +73,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -36,6 +91,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2EO8z7WpQjvcRB3D8nt6huZrbgI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -93,6 +149,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662455529914</updated>
       <workItem from="1662455532868" duration="3513000" />
+      <workItem from="1664276902971" duration="1004000" />
     </task>
     <servers />
   </component>
@@ -100,21 +157,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1397" height="232" key="GridCell.Tab.0.bottom" timestamp="1662472144429">
+    <state width="1397" height="232" key="GridCell.Tab.0.bottom" timestamp="1664277915337">
       <screen x="0" y="0" width="1440" height="912" />
     </state>
-    <state width="1397" height="232" key="GridCell.Tab.0.bottom/0.0.1440.912@0.0.1440.912" timestamp="1662472144429" />
-    <state width="1397" height="232" key="GridCell.Tab.0.center" timestamp="1662472144429">
+    <state width="1397" height="232" key="GridCell.Tab.0.bottom/0.0.1440.912@0.0.1440.912" timestamp="1664277915337" />
+    <state width="1397" height="232" key="GridCell.Tab.0.center" timestamp="1664277915337">
       <screen x="0" y="0" width="1440" height="912" />
     </state>
-    <state width="1397" height="232" key="GridCell.Tab.0.center/0.0.1440.912@0.0.1440.912" timestamp="1662472144429" />
-    <state width="1397" height="232" key="GridCell.Tab.0.left" timestamp="1662472144429">
+    <state width="1397" height="232" key="GridCell.Tab.0.center/0.0.1440.912@0.0.1440.912" timestamp="1664277915337" />
+    <state width="1397" height="232" key="GridCell.Tab.0.left" timestamp="1664277915337">
       <screen x="0" y="0" width="1440" height="912" />
     </state>
-    <state width="1397" height="232" key="GridCell.Tab.0.left/0.0.1440.912@0.0.1440.912" timestamp="1662472144429" />
-    <state width="1397" height="232" key="GridCell.Tab.0.right" timestamp="1662472144429">
+    <state width="1397" height="232" key="GridCell.Tab.0.left/0.0.1440.912@0.0.1440.912" timestamp="1664277915337" />
+    <state width="1397" height="232" key="GridCell.Tab.0.right" timestamp="1664277915337">
       <screen x="0" y="0" width="1440" height="912" />
     </state>
-    <state width="1397" height="232" key="GridCell.Tab.0.right/0.0.1440.912@0.0.1440.912" timestamp="1662472144429" />
+    <state width="1397" height="232" key="GridCell.Tab.0.right/0.0.1440.912@0.0.1440.912" timestamp="1664277915337" />
   </component>
 </project>

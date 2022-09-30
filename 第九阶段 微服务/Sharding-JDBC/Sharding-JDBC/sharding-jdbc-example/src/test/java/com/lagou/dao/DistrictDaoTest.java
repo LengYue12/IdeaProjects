@@ -30,7 +30,7 @@ public class DistrictDaoTest {
 
     @Test
     public void testDelete(){
-        districtDao.deleteDict(774721291797135361L);
-        districtDao.deleteDict(774721292011044864L);
+        districtDao.deleteDict(781984053157953537L);
+        districtDao.deleteDict(781984053346697216L);
     }
 }

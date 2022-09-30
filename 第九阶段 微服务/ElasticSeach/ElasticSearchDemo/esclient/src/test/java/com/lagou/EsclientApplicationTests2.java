@@ -87,7 +87,7 @@ public class EsclientApplicationTests2 {
     @Test
     public void findByPrice(){
         List<Product> byPriceBetween = productRepository.findByPriceBetween(2000.00, 4000.00);
-        System.out.println(byPriceBetween.size());
+        byPriceBetween.forEach(System.out::println);
     }
 
 
@@ -113,13 +113,14 @@ public class EsclientApplicationTests2 {
         Optional<Product> optional = productRepository.findById(3L);
         // 取出数据
         // orELse方法的作用：如果optional中封装的实体对象为空也就是没有从索引库中查询出匹配的文档，返回orElse方法的参数
+        // 也就是索引库中没有3对应的文档，这时候返回null
         Product product = optional.orElse(null);
         System.out.println("product = " + product);
     }
 
     @Test
     public void insertDocument(){
-        Product product = new Product(6L,"小米手机","手机","小米",3299.69,"http://image.chuizi.com/1.jpg");
+        Product product = new Product(1L,"小米手机","手机","小米",3299.69,"http://image.chuizi.com/1.jpg");
         // 新增
         productRepository.save(product);
         System.out.println("save success");

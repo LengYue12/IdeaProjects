@@ -39,22 +39,22 @@ public class PayOrderDaoTest {
 
 
         // lg_order_1 库 的pay_order_2
-        ids.add(774712035991617537L);
-        ids.add(774712036343939073L);
+        ids.add(781977071319515137L);
+        ids.add(781977071684419585L);
 
 
-        ids.add(774711637683732480L);  // lg_order_2 库 的pay_order_1
-        ids.add(774711637297856513L);  // lg_order_2 库 的pay_order_2
+        ids.add(781977071663448064L);  // lg_order_2 库 的pay_order_1
+        ids.add(781978013574103041L);  // lg_order_2 库 的pay_order_2
 
 
 
 //        // order_1
-//        ids.add(774694205535551488L);
-//        ids.add(774694205569105920L);
+//        ids.add(781960232984117248L);
+//        ids.add(781960233026060290L);
 //
-//        // order_2
-//        ids.add(774689818159349761L);
-//        ids.add(774690132740538369L);
+////        // order_2
+//        ids.add(781960232984117249L);
+//        ids.add(781960233026060289L);
 
         List<Map> orderByIds = payOrderDao.findOrderByIds(ids);
 
